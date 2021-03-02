@@ -8,9 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "ethers": "^5.0.31",
     "next": "10.0.5",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "use-wallet": "^0.8.1"
   },
   "devDependencies": {
     "@types/node": "^14.14.31",
