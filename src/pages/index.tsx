@@ -13,7 +13,7 @@ export default function Home() {
           Meta Network
         </h1>
         {wallet.status === 'connected' ? wallet.account : 'Not Connected'}
-        <Link href="/wallet">Go to Wallet</Link>
+        <Link href="/connect">Connect Wallet</Link>
         <p className={styles.description}>
           {
             isDevelopment
