@@ -7,8 +7,11 @@ import { ConnectWalletModal } from "../components/ConnectWalletModal";
 export default function Home() {
     const { isOpen, onOpen, onClose } = useDisclosure()
   const wallet = useWallet()
-  const MetaTotalSupply = 1145141919810
+  // const MetaTotalSupply = 1145141919810
+  const MetaTotalSupply = 201981000000
   const metaSold = 191981000000
+  const percentage = (metaSold / MetaTotalSupply * 100);
+  const isNearlyEnd = percentage >= 90
 
   return (
       <main className={styles.main}>
@@ -17,8 +20,8 @@ export default function Home() {
         </h1>
       <Flex>
   <Box p="4" textAlign="center">
-    <CircularProgress value={40} size="128px" color="green.400">
-            <CircularProgressLabel>{ (metaSold / MetaTotalSupply * 100).toFixed(2) }%</CircularProgressLabel>
+    <CircularProgress value={percentage} size="128px" color={isNearlyEnd ? 'red.400' : 'green.400'}>
+            <CircularProgressLabel>{ (metaSold / MetaTotalSupply * 100).toFixed(1) }%</CircularProgressLabel>
           </CircularProgress>
           <p>META have been distributed</p>
   </Box>
