@@ -16,7 +16,7 @@ export default function Home() {
         Meta Network
         </h1>
       <Flex>
-  <Box p="4">
+  <Box p="4" textAlign="center">
     <CircularProgress value={40} size="128px" color="green.400">
             <CircularProgressLabel>{ (metaSold / MetaTotalSupply * 100).toFixed(2) }%</CircularProgressLabel>
           </CircularProgress>
