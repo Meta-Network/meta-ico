@@ -15,17 +15,17 @@ function MyApp({ Component, pageProps }: AppProps) {
       walletconnect: { rpcUrl: "https://bsc-dataseed.binance.org/" }
     }}>
     <ChakraProvider>
-    <Head>
+      <Head>
         <title>Meta Network</title>
         <link rel="icon" href="/favicon.ico" />
-    </Head>
-    <Navbar />
-    <div className={styles.container}>
-      <Component {...pageProps} />
-      <Footer />
+      </Head>
+      <Navbar />
+      <div className={styles.container}>
+        <Component {...pageProps} />
+        <Footer />
       </div>
     </ChakraProvider>
-    </UseWalletProvider>
+  </UseWalletProvider>
 }
 
 // Only uncomment this method if you have blocking data requirements for
