@@ -31,7 +31,9 @@ export function Navbar() {
     // </section>
   return <Flex margin="1rem">
   <Box p="2">
-    <Heading size="md">Meta Network</Heading>
+      <Heading size="md">
+        <Link href="/">Meta Network</Link>
+      </Heading>
   </Box>
     <Spacer />
 
