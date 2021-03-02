@@ -18,7 +18,7 @@ export default function Home() {
       <Flex>
         <Box p="4">
           <CircularProgress value={40} size="128px" color="green.400">
-            <CircularProgressLabel>{(metaSold / metaTotalSupply * 100).toFixed(2)}%</CircularProgressLabel>
+            <CircularProgressLabel style={{ fontSize: '0.16em' }}>{(metaSold / metaTotalSupply * 100).toFixed(2)}%</CircularProgressLabel>
           </CircularProgress>
           <p>META have been distributed</p>
         </Box>
