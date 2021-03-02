@@ -6,6 +6,7 @@ import { UseWalletProvider } from "use-wallet";
 import '../styles/globals.css'
 import styles from '../styles/Home.module.css'
 import { Footer } from '../components/Footer';
+import { ChakraProvider } from "@chakra-ui/react"
 
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -13,6 +14,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     connectors={{
       walletconnect: { rpcUrl: "https://bsc-dataseed.binance.org/" }
     }}>
+    <ChakraProvider>
     <Head>
         <title>Meta Network</title>
         <link rel="icon" href="/favicon.ico" />
@@ -22,6 +24,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Component {...pageProps} />
       <Footer />
       </div>
+    </ChakraProvider>
     </UseWalletProvider>
 }
 
