@@ -1,9 +1,15 @@
 // import App from "next/app";
 import type { AppProps /*, AppContext */ } from 'next/app'
+import { UseWalletProvider } from "use-wallet";
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return <UseWalletProvider chainId={56}
+    connectors={{
+      walletconnect: { rpcUrl: "https://bsc-dataseed.binance.org/" }
+    }}>
+      <Component {...pageProps} />
+    </UseWalletProvider>
 }
 
 // Only uncomment this method if you have blocking data requirements for
