@@ -21,6 +21,7 @@ export default function Wallet() {
         <div>
           <div>Account: <code>{wallet.account}</code></div>
           <div>Balance: {utils.formatEther(wallet.balance)} BNB</div>
+          <div>Connector: {wallet.connector}</div>
           <button onClick={() => wallet.reset()}>Disconnect</button>
         </div>
       ) : (
