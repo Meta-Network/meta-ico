@@ -9,10 +9,10 @@ const BiggerIcon = {
 export function Footer() {
     return <Flex margin="1rem" width="100%">
         <Head>
-            <link href="https://at.alicdn.com/t/font_2395525_sjpifmsr80b.css" rel="stylesheet" key="test"/>
+            <link href="https://at.alicdn.com/t/font_2395525_sjpifmsr80b.css" rel="stylesheet" key="test" />
         </Head>
         <Box p="2">
-                        <p>Meta Network All Right Reserved. </p>
+            <p>Meta Network All Right Reserved. </p>
         </Box>
         <Spacer />
         <Box>
@@ -23,5 +23,5 @@ export function Footer() {
             <a target="_blank" href="#"><i className="iconfont icon-medium" style={BiggerIcon}></i></a>
             <a target="_blank" href="#"><i className="iconfont icon-facebook" style={BiggerIcon}></i></a>
         </Box>
-      </Flex>
+    </Flex>
 }
