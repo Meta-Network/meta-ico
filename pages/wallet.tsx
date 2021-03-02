@@ -34,7 +34,7 @@ export default function Wallet() {
       </main>
 
       <footer className={styles.footer}>
-        Meta Network All Right Reserved. Twitter Facebook Telegram GitHub
+        Meta Network All Right Reserved.
       </footer>
     </div>
   )
