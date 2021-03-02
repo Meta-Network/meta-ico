@@ -1,0 +1,4 @@
+.navbar-nav a:not(:first-child) {
+  margin-left: 40px;
+  margin-left: 2.5rem;
+}

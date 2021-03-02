@@ -4,7 +4,7 @@ import { useWallet } from 'use-wallet'
 import styles from '../styles/Home.module.css'
 
 export default function Wallet() {
-    const wallet = useWallet()
+  const wallet = useWallet()
   const blockNumber = wallet.getBlockNumber()
   return (
     <div className={styles.container}>
@@ -15,7 +15,7 @@ export default function Wallet() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-                  My Wallet
+            My Wallet
         </h1>
         {wallet.status === 'connected' ? (
         <div>
