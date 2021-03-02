@@ -7,13 +7,11 @@ export default function Wallet() {
   const wallet = useWallet()
   const blockNumber = wallet.getBlockNumber()
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>My Wallet - Meta Network</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <main className={styles.main}>
+        <Head>
+          <title>My Wallet - Meta Network</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
         <h1 className={styles.title}>
             My Wallet
         </h1>
@@ -32,10 +30,5 @@ export default function Wallet() {
         </div>
       )}
       </main>
-
-      <footer className={styles.footer}>
-        Meta Network All Right Reserved.
-      </footer>
-    </div>
   )
 }
