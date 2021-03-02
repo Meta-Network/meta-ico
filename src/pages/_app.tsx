@@ -5,6 +5,7 @@ import { Navbar } from "../components/Navbar";
 import { UseWalletProvider } from "use-wallet";
 import '../styles/globals.css'
 import styles from '../styles/Home.module.css'
+import { Footer } from '../components/Footer';
 
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -19,9 +20,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <Navbar />
     <div className={styles.container}>
       <Component {...pageProps} />
-      <footer className={styles.footer}>
-        Meta Network All Right Reserved. Twitter Facebook Telegram GitHub
-      </footer>
+      <Footer />
       </div>
     </UseWalletProvider>
 }

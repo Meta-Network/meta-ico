@@ -37,3 +37,14 @@ a {
   height: 88px;
   height: 5.5rem;
 }
+
+@font-face {
+  font-family: "iconfont"; /* project id 2395525 */
+  src: url("//at.alicdn.com/t/font_2395525_8x7f5on1dnh.eot");
+  src: url("//at.alicdn.com/t/font_2395525_8x7f5on1dnh.eot?#iefix")
+      format("embedded-opentype"),
+    url("//at.alicdn.com/t/font_2395525_8x7f5on1dnh.woff2") format("woff2"),
+    url("//at.alicdn.com/t/font_2395525_8x7f5on1dnh.woff") format("woff"),
+    url("//at.alicdn.com/t/font_2395525_8x7f5on1dnh.ttf") format("truetype"),
+    url("//at.alicdn.com/t/font_2395525_8x7f5on1dnh.svg#iconfont") format("svg");
+}
