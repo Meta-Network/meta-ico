@@ -7,6 +7,7 @@ import '../styles/globals.css'
 import styles from '../styles/Home.module.css'
 import { Footer } from '../components/Footer';
 import { ChakraProvider } from "@chakra-ui/react"
+import { WalletErrorPopup } from '../components/WalletError';
 
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -24,6 +25,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
         <Footer />
       </div>
+      <WalletErrorPopup />
     </ChakraProvider>
   </UseWalletProvider>
 }
