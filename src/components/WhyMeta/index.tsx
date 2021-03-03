@@ -18,7 +18,6 @@ const TextProp: TextProps = {
 }
 
 export default function WhyMeta(props: any) {
-  console.log(Icon1)
   return (<>
     <Heading>
       Why Meta?
