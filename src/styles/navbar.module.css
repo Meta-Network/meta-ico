@@ -1,3 +1,7 @@
 .navbar-nav *:not(:first-child) {
   margin-left: 2.5rem;
 }
+
+.address {
+  margin-right: 0.5rem;
+}

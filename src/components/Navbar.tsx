@@ -41,7 +41,7 @@ export function Navbar() {
       <StyledLink href="#" isExternal marginRight="0.5rem">Blog</StyledLink>
       <StyledLink href="#" isExternal marginRight="0.5rem">GitHub</StyledLink>
       {wallet.status === 'connected' ? <>
-        <span>👛 {getShortedAddress(wallet.account)}</span>
+        <span className={styles.address}>👛 {getShortedAddress(wallet.account)}</span>
         <Button colorScheme="red" variant="outline" onClick={() => wallet.reset()}>Disconnect</Button>
       </> : <Button onClick={onOpen}>Connect Wallet</Button>}
     </Box>
