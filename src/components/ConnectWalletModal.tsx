@@ -2,13 +2,25 @@ import {
   Button, Box, Link, Modal, ModalBody, ModalOverlay, ModalFooter, ModalContent, ModalCloseButton, ModalHeader,
 } from "@chakra-ui/react"
 import { WalletConnect } from "./Icon/WalletConnect";
-import { useWallet } from "use-wallet";
+import { useWallet, ChainUnsupportedError, ConnectionRejectedError } from "use-wallet";
 import { MetaMask } from "./Icon/MetaMask";
+import { useEffect } from "react";
 
 export function ConnectWalletModal({ isOpen, onClose }: { isOpen: boolean, onClose: () => void }) {
   // const { isOpen, onOpen, onClose } = useDisclosure()
   const wallet = useWallet();
   const connectTo = (platform: 'injected' | 'walletconnect') => wallet.connect(platform).then(() => onClose());
+
+  useEffect(() => {
+    if (wallet.error instanceof ChainUnsupportedError) {
+      alert('Wrong Network detected, Please switch to the Binance Smart Chain Mainnet')
+    }
+    if (wallet.error instanceof ConnectionRejectedError) {
+      console.error('Connection Rejected', wallet.error)
+      alert('Connection Rejected')
+    }
+  }, [wallet.error])
+  
   return <Modal isOpen={isOpen} size="sm" onClose={onClose}>
     <ModalOverlay />
     <ModalContent>
@@ -23,6 +35,8 @@ export function ConnectWalletModal({ isOpen, onClose }: { isOpen: boolean, onClo
       </ModalBody>
 
       <ModalFooter>
+        {/* {JSON.stringify(wallet.error)} */}
+        {wallet.status}
         <Link href="#">Learn how to connect?</Link>
       </ModalFooter>
     </ModalContent>
