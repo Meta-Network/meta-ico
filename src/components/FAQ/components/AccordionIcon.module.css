@@ -1,0 +1,11 @@
+.open {
+    transform: rotate(90deg);
+    transition: transform 0.2s;
+    transform-origin: center;
+}
+
+.close {
+    transform: rotate(0deg);
+    transition: transform 0.2s;
+    transform-origin: center;
+}
