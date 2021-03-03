@@ -1,8 +1,9 @@
 import {
-  Button, Box, Link, Modal, ModalBody, ModalOverlay, ModalFooter, ModalContent, ModalCloseButton, ModalHeader,
+  Button, Box, Link, Modal, ModalBody, ModalOverlay, ModalFooter,
+  ModalContent, ModalCloseButton, ModalHeader, AlertIcon, Alert,
 } from "@chakra-ui/react"
 import { WalletConnect } from "./Icon/WalletConnect";
-import { useWallet, ChainUnsupportedError, ConnectionRejectedError } from "use-wallet";
+import { useWallet } from "use-wallet";
 import { MetaMask } from "./Icon/MetaMask";
 
 export function ConnectWalletModal({ isOpen, onClose }: { isOpen: boolean, onClose: () => void }) {
@@ -16,6 +17,10 @@ export function ConnectWalletModal({ isOpen, onClose }: { isOpen: boolean, onClo
       <ModalHeader>Connect to a wallet</ModalHeader>
       <ModalCloseButton />
       <ModalBody>
+        <Alert status="info">
+          <AlertIcon />
+          Binance Smart Chain network only. (Chain ID: 56)
+        </Alert>
         <Button
           onClick={() => connectTo('injected')} leftIcon={<MetaMask />}
           colorScheme="orange" variant="outline" width="100%" margin="1rem 0">MetaMask</Button>
