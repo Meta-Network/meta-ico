@@ -11,6 +11,8 @@ export default function Home() {
   const wallet = useWallet()
   const metaTotalSupply = 1145141919810
   const metaSold = 191981000000
+  const percentage = (metaSold / metaTotalSupply * 100);
+  const isNearlyEnd = percentage >= 90
 
   return (
     <main className={styles.main}>
