@@ -43,7 +43,7 @@ export function TokenDistribution() {
         <Box width={640}>
           <Text fontSize="3xl">META Token Distribution</Text>
           <Text {...HeadTextProps}>TOTAL DISTRIBUTED</Text>
-            <Progress value={percentage} borderRadius={15} variant="orange-dynamic" />
+            <Progress value={percentage} borderRadius={15} colorScheme="orange" />
             <Flex>
                 <Text {...minorTextProps}>0 META</Text>
                 <Spacer />
@@ -58,8 +58,8 @@ export function TokenDistribution() {
                     </Flex>
                     <Spacer />
                     <Flex alignItems="baseline">
-                        <Text {...NumberTextProps}>114514 BNB </Text>
-                        <Text  {...unitTextProps}>Received</Text>
+                        <Text {...NumberTextProps}>114514</Text>
+                        <Text  {...unitTextProps}>BNB Received</Text>
                     </Flex>
                 </Flex>
                 <Box>
