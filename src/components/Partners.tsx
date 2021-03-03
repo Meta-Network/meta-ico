@@ -33,7 +33,7 @@ const logosUrls: string[] = [
 export function PartnersDisplay() {
     return <Box>
         <Heading textAlign="center">Partner & Supporter </Heading>
-        <Wrap justify="center" spacing="2rem">
+        <Wrap justify="center" spacing="2rem" margin="2rem">
             { logosUrls.map((logo, idx) => <WrapItem key={idx}>
                 <Image  {...LogoProps} src={logo} />
             </WrapItem>) }
