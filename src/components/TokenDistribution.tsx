@@ -1,6 +1,27 @@
-import { Flex, Box, Button, useDisclosure, Text, Spacer, Progress } from "@chakra-ui/react";
+import { Flex, Box, Button, useDisclosure, Text, TextProps, Spacer, Progress, Stack } from "@chakra-ui/react";
 import { useWallet } from "use-wallet";
+import Image from "next/image";
 import { ConnectWalletModal } from "./ConnectWalletModal";
+
+const HeadTextProps: TextProps = {
+    fontWeight: 500
+}
+
+const NumberTextProps: TextProps = {
+    fontSize: "4xl",
+    fontWeight: "bold"
+}
+
+const minorTextProps: TextProps = {
+    fontSize: "xs",
+    color: "gray.500"
+}
+
+
+const unitTextProps: TextProps = {
+    ...minorTextProps,
+    marginLeft:2
+}
 
 export function TokenDistribution() {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -10,23 +31,41 @@ export function TokenDistribution() {
     const isNearlyEnd = percentage >= 90
     const wallet = useWallet()
     return <Flex>
-        <Box p="4">
+        <Box p="2" display='grid'>
+            <Image src="/assets/logo_meta@2x.png" width={256} height={256} />
           {wallet.status !== 'connected'
-            ? <Button onClick={onOpen}>Connect wallet</Button>
-            : <>
-              <Text>👛 {wallet.account}</Text>
-              <Text>Connect by {wallet.connector}</Text>
-              <Button colorScheme="red">Get Meta Now</Button></>}
+            ? <Button onClick={onOpen} marginTop={2}>Connect wallet</Button>
+            : 
+              <Button colorScheme="purple" marginTop={2} rounded={24}>Get Meta Now</Button>}
         </Box>
         <Spacer />
-        <Box p="4">
+        <Box width={640}>
           <Text fontSize="3xl">META Token Distribution</Text>
-          <Text>TOTAL DISTRIBUTED</Text>
-          <Progress value={percentage} borderRadius={15} variant="orange-dynamic" />
-          <Text>{metaSold} META Sold</Text>
-          <Text>{metaTotalSupply - metaSold} META Left</Text>
-          <Text>11:45:14 Remaining</Text>
-          
+          <Text {...HeadTextProps}>TOTAL DISTRIBUTED</Text>
+            <Progress value={percentage} borderRadius={15} variant="orange-dynamic" />
+            <Flex>
+                <Text {...minorTextProps}>0 META</Text>
+                <Spacer />
+                <Text {...minorTextProps}>{metaTotalSupply} META</Text>
+            </Flex>
+            <Stack>
+                <Text {...HeadTextProps}>CURRENT DISTRIBUTION</Text>
+                <Flex>
+                    <Flex alignItems="baseline">
+                        <Text {...NumberTextProps}>100000000</Text>
+                        <Text {...unitTextProps}>META</Text>
+                    </Flex>
+                    <Spacer />
+                    <Flex alignItems="baseline">
+                        <Text {...NumberTextProps}>114514 BNB </Text>
+                        <Text  {...unitTextProps}>Received</Text>
+                    </Flex>
+                </Flex>
+                <Box>
+                    <Text {...HeadTextProps}>CURRENT DISTRIBUTION ENDS IN</Text>
+                    <Text {...NumberTextProps}>11:45:14:55</Text>
+                </Box>
+            </Stack>
         </Box>
         <ConnectWalletModal isOpen={isOpen} onClose={onClose} />
       </Flex>
