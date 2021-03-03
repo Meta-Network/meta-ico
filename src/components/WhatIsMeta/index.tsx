@@ -6,8 +6,8 @@ import { Line } from "./components/Line"
 
 const WrapperFlex: FlexProps = {
     width: "100%",
-    marginTop: "128px",
-    marginBottom: "128px"
+    maxWidth: '1472px',
+    margin: '128px auto'
 }
 
 const LeftContentFlex: FlexProps = {
