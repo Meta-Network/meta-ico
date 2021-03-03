@@ -1,6 +1,7 @@
 import { Flex, Box, Button, useDisclosure, Text, TextProps, Spacer, Progress, Stack } from "@chakra-ui/react";
 import { useWallet } from "use-wallet";
-import Image from "next/image";
+import MetaCoinLogo from "../../public/assets/logo_meta@2x.png";
+import { Image } from "@chakra-ui/react";
 import { ConnectWalletModal } from "./ConnectWalletModal";
 
 const HeadTextProps: TextProps = {
@@ -32,7 +33,7 @@ export function TokenDistribution() {
     const wallet = useWallet()
     return <Flex>
         <Box p="2" display='grid'>
-            <Image src="/assets/logo_meta@2x.png" width={256} height={256} />
+            <Image src={MetaCoinLogo} width={256} height={256} />
           {wallet.status !== 'connected'
             ? <Button onClick={onOpen} marginTop={2}>Connect wallet</Button>
             : 
