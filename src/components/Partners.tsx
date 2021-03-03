@@ -1,15 +1,20 @@
 import { Box, Wrap, WrapItem, Image, ImageProps, Heading } from "@chakra-ui/react";
+import LogoArweave from "../assets/img/logo-arweave.svg";
+import LogoPolygon from "../assets/img/logo-polygon.png";
+import LogoXOrder from "../assets/img/logo-xorder.png";
 
 const LogoProps: ImageProps = {
     height: "40px",
     filter: "grayscale(100%)",
-    margin: '1'
+    margin: "1",
+    userSelect: "none"
 }
 
 // Better use external CDN to store these logos
 const logosUrls: string[] = [
-    "https://raw.githubusercontent.com/ethglobal/sponsor-logos/master/arweave.svg",
-    "https://polygon.technology/wp-content/uploads/2021/01/logo-polygon.png",
+    LogoArweave,
+    LogoPolygon,
+    LogoXOrder,
     // Just test for the layout
     "https://raw.githubusercontent.com/ethglobal/sponsor-logos/master/arweave.svg",
     "https://polygon.technology/wp-content/uploads/2021/01/logo-polygon.png",
