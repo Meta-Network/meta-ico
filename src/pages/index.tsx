@@ -4,6 +4,8 @@ import { useWallet } from "use-wallet";
 import { Flex, Button, Spacer, Box, Text, CircularProgress, CircularProgressLabel, useDisclosure } from "@chakra-ui/react";
 import styles from '../styles/Home.module.css'
 import { ConnectWalletModal } from "../components/ConnectWalletModal";
+import { PartnersDisplay } from "../components/Partners";
+
 export default function Home() {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const wallet = useWallet()
@@ -15,6 +17,7 @@ export default function Home() {
       <h1 className={styles.title}>
         Meta Network
         </h1>
+      <PartnersDisplay />
       <Flex>
         <Box p="4">
           <CircularProgress value={40} size="128px" color="green.400">
