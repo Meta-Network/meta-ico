@@ -11,8 +11,8 @@ export function ConnectWalletModal({ isOpen, onClose }: { isOpen: boolean, onClo
   const connectTo = (platform: 'injected' | 'walletconnect') => wallet.connect(platform).then(() => onClose());
   
   return <Modal isOpen={isOpen} size="sm" onClose={onClose}>
-    <ModalOverlay />
-    <ModalContent>
+    <ModalOverlay style={{ height: '100%', width: '100%' }} />
+    <ModalContent style={{ width: '100%' }} >
       <ModalHeader>Connect to a wallet</ModalHeader>
       <ModalCloseButton />
       <ModalBody>
