@@ -5,7 +5,7 @@ import { Navbar } from "../components/Navbar";
 import { UseWalletProvider } from "use-wallet";
 import '../styles/globals.css'
 import styles from '../styles/Home.module.css'
-import { Footer } from '../components/Footer';
+import Footer from '../components/Footer/index';
 import { ChakraProvider } from "@chakra-ui/react"
 
 
