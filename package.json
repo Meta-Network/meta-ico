@@ -15,8 +15,10 @@
     "ethers": "^5.0.31",
     "framer-motion": "^3.9.1",
     "next": "10.0.5",
+    "next-images": "^1.7.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-feather": "^2.0.9",
     "use-wallet": "^0.8.1"
   },
   "devDependencies": {

@@ -6,16 +6,31 @@ import { UseWalletProvider } from "use-wallet";
 import '../styles/globals.css'
 import styles from '../styles/Home.module.css'
 import { Footer } from '../components/Footer';
-import { ChakraProvider } from "@chakra-ui/react"
+import { ChakraProvider, extendTheme } from "@chakra-ui/react"
 import { WalletErrorPopup } from '../components/WalletError';
 
+const theme = extendTheme({
+  colors: {
+    mttk: {
+      100: "#542DE0",
+      200: "#542DE0",
+      300: "#542DE0",
+      400: "#542DE0",
+      500: "#542DE0",
+      600: "#542DE0",
+      700: "#542DE0",
+      800: "#542DE0",
+      900: "#542DE0",
+    }
+  },
+})
 
 function MyApp({ Component, pageProps }: AppProps) {
   return <UseWalletProvider chainId={56}
     connectors={{
       walletconnect: { rpcUrl: "https://bsc-dataseed.binance.org/" }
     }}>
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <Head>
         <title>Meta Network</title>
         <link rel="icon" href="/favicon.ico" />
