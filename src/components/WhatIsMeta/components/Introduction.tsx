@@ -1,5 +1,5 @@
 import { Box, BoxProps, Heading, HeadingProps, Text, TextProps } from "@chakra-ui/react";
-import { Line } from "./Line";
+import { Line } from "../../Line";
 
 const WrapperBox: BoxProps = {
     maxWidth: "640px",
@@ -25,7 +25,6 @@ const ContentText: TextProps = {
 
 export interface IntroductionProps {
     title: string
-    children?: React.ReactChild
 }
 
 export const Introduction: React.FC<IntroductionProps> = ({ title, children }) => {

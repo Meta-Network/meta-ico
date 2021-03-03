@@ -2,7 +2,7 @@ import { Box, BoxProps, Flex, FlexProps, Spacer, Image, ImageProps, Heading, Hea
 import { ArrowRight } from "react-feather"
 import ImgWhatIsMeta from "../../assets/img/img-whatismeta.png"
 import { Introduction } from "./components/Introduction"
-import { Line } from "./components/Line"
+import { Line } from "../Line"
 
 const WrapperFlex: FlexProps = {
     width: "100%",
@@ -11,7 +11,7 @@ const WrapperFlex: FlexProps = {
 }
 
 const LeftContentFlex: FlexProps = {
-    width: "43%",
+    width: "45%",
     flexDirection: "column"
 }
 
@@ -34,7 +34,7 @@ const MoreInfoButton: ButtonProps = {
 }
 
 const RightContentBox: BoxProps = {
-    width: "40%",
+    width: "38%",
     alignSelf: "center"
 }
 

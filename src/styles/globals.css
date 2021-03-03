@@ -1,5 +1,6 @@
 html,
 body {
+  color: #333333;
   padding: 0;
   margin: 0 auto;
   /* max-width: 1472px; */
@@ -53,4 +54,8 @@ a {
   font-style: normal;
   font-weight: normal;
   src: local('DIN Alternate Bold'), url('/fonts/DINAlternate-Bold.woff') format('woff');
+}
+
+body.chakra-ui-light {
+  color: #333333;
 }
