@@ -24,9 +24,7 @@ export function ConnectWalletModal({ isOpen, onClose }: { isOpen: boolean, onClo
       </ModalBody>
 
       <ModalFooter>
-        {/* {JSON.stringify(wallet.error)} */}
-        {wallet.status}
-        <Link href="#">Learn how to connect?</Link>
+        <Link href="https://docs.pancakeswap.finance/guides/faq#how-do-i-set-up-my-wallet-on-binance-smart-chain">Learn how to connect?</Link>
       </ModalFooter>
     </ModalContent>
   </Modal>
