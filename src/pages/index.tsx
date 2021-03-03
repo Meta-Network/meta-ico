@@ -12,7 +12,8 @@ export default function Home() {
       </Heading>
       <WhatIsMeta />
       <PartnersDisplay />
-      <TokenDistribution />
+      {/* 空投未开始， UI 暂时不对外界开放 */}
+      { process.env.NODE_ENV === 'development' && <TokenDistribution />}
     </main>
   )
 }
