@@ -5,6 +5,7 @@ import { Flex, Button, Spacer, Box, Text, CircularProgress, CircularProgressLabe
 import styles from '../styles/Home.module.css'
 import { ConnectWalletModal } from "../components/ConnectWalletModal";
 import { PartnersDisplay } from "../components/Partners";
+import { WalletErrorPopup } from '../components/WalletError';
 
 export default function Home() {
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -42,7 +43,7 @@ export default function Home() {
         </Box>
       </Flex>
       <ConnectWalletModal isOpen={isOpen} onClose={onClose} />
-
+      <WalletErrorPopup />
     </main>
   )
 }
