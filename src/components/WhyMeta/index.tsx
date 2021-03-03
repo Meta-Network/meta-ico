@@ -1,10 +1,21 @@
-import { Flex, FlexProps, Heading, Grid, GridItem, Image, Text, Center } from "@chakra-ui/react";
+import { Flex, FlexProps, Heading, Grid, GridItem, Image, Text, TextProps, Center, ImageProps } from "@chakra-ui/react";
 import { Box } from "react-feather";
 import Icon1 from "../../../public/assets/icon1@2x.png";
 import Icon2 from "../../../public/assets/icon2@2x.png";
 import Icon3 from "../../../public/assets/icon3@2x.png";
 import Icon4 from "../../../public/assets/icon4@2x.png";
 
+const ImageProp: ImageProps = {
+  verticalAlign: "middle",
+  margin: "auto",
+}
+
+const TextProp: TextProps = {
+  align: "center",
+  verticalAlign: "bottom",
+  fontFamily: "DINAlternate-Bold, DINAlternate",
+  fontSize: "20px",
+}
 
 export default function WhyMeta(props: any) {
   console.log(Icon1)
@@ -13,34 +24,14 @@ export default function WhyMeta(props: any) {
       Why Meta?
     </Heading>
     <Grid margin="128px 0" templateColumns="repeat(4, 1fr)" gap={6}>
-      <GridItem>
-        <Center>
-          <Image src={Icon1} w="128px" align="center" />
-        </Center>
-        <Text align="center" verticalAlign="bottom">High Profit</Text>
-
-      </GridItem>
-      <GridItem>
-        <Center>
-          <Image src={Icon2} w="112px" align="center" />
-        </Center>
-        <Text align="center" verticalAlign="bottom">High savety</Text>
-
-      </GridItem>
-      <GridItem>
-        <Center>
-          <Image src={Icon3} w="140px" align="center" />
-        </Center>
-        <Text align="center" verticalAlign="bottom">Realtime-info</Text>
-
-      </GridItem>
-      <GridItem>
-        <Center>
-          <Image src={Icon4} w="127px" align="center" />
-        </Center>
-        <Text align="center" verticalAlign="bottom">Diverse usage scenarios</Text>
-
-      </GridItem>
+      <Image src={Icon1} w="128px" {...ImageProp} />
+      <Image src={Icon2} w="112px" {...ImageProp} />
+      <Image src={Icon3} w="140px" {...ImageProp} />
+      <Image src={Icon4} w="127px" {...ImageProp} />
+      <Text {...TextProp}>High Profit</Text>
+      <Text {...TextProp}>High savety</Text>
+      <Text {...TextProp}>Realtime-info</Text>
+      <Text {...TextProp}>Diverse usage scenarios</Text>
     </Grid>
   </>);
 }
