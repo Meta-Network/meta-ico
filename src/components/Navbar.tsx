@@ -2,13 +2,19 @@ import styles from '../styles/navbar.module.css'
 import {
   Flex, Spacer, Heading, Button, Box, Link as StyledLink,
   useDisclosure, Modal, ModalBody, ModalOverlay, ModalFooter, ModalContent, ModalCloseButton, ModalHeader,
-  ButtonGroup
+  ButtonGroup, FlexProps
 } from "@chakra-ui/react"
 import { ConnectWalletModal } from "./ConnectWalletModal";
 import Link from "next/link";
 import { useWallet } from "use-wallet";
 import { useRouter } from "next/router";
 import { getShortedAddress } from '../utils';
+
+const FlexHeader: FlexProps = {
+  maxWidth: '1472px',
+  marginLeft: 'auto',
+  marginRight: 'auto'
+}
 
 export function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -29,7 +35,7 @@ export function Navbar() {
   //   </nav>
   //   </section>
   // </section>
-  return <Flex margin="1rem">
+  return <Flex margin="1rem" { ...FlexHeader }>
     <Box p="2">
       <Heading size="md">
         <Link href="/">Meta Network</Link>
