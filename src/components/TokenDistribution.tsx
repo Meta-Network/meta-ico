@@ -41,7 +41,7 @@ export function TokenDistribution() {
         </Box>
         <Spacer />
         <Box width={640}>
-          <Text fontSize="3xl">META Token Distribution</Text>
+          <Text fontSize="3xl" fontWeight="bold">META Token Distribution</Text>
           <Text {...HeadTextProps}>TOTAL DISTRIBUTED</Text>
             <Progress value={percentage} borderRadius={15} colorScheme="orange" />
             <Flex>
