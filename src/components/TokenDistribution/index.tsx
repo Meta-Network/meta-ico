@@ -32,7 +32,7 @@ export function TokenDistribution() {
     const percentage = (metaSold / metaTotalSupply * 100);
     const isNearlyEnd = percentage >= 90
     const wallet = useWallet()
-    return <Flex>
+    return <Flex fontFamily="DINAlternate-Bold,DINAlternate">
         <Box p="2" display='grid'>
             <Image src={MetaCoinLogo} width={256} height={256} />
           {wallet.status !== 'connected'
