@@ -5,6 +5,7 @@ import { TokenDistribution } from '../components/TokenDistribution';
 import { WhatIsMeta } from '../components/WhatIsMeta';
 import WhyMeta from "../components/WhyMeta";
 import { FAQ } from "../components/FAQ";
+import { WhatCanMetaDo } from "../components/WhatCanMetaDo";
 
 export default function Home() {
   return (
@@ -14,10 +15,11 @@ export default function Home() {
       </Heading>
       <WhatIsMeta />
       <WhyMeta />
+      <WhatCanMetaDo />
       {/* 空投未开始， UI 暂时不对外界开放 */}
       { process.env.NODE_ENV === 'development' && <TokenDistribution />}
-      <FAQ />
       <PartnersDisplay />
+      <FAQ />
     </main>
   )
 }
