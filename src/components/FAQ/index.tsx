@@ -7,7 +7,7 @@ import { Accordion } from "./components/Accordion"
 
 const WrapperBox: BoxProps = {
     width: "100%",
-    maxWidth: "1472px",
+    maxWidth: "1280px",
     margin: "128px auto"
 }
 
@@ -21,7 +21,7 @@ const TitleHeading: HeadingProps = {
 }
 
 const LeftContentBox: BoxProps = {
-    width: "43%"
+    width: "40%"
 }
 
 const LeftContentImage: ImageProps = {
@@ -29,7 +29,7 @@ const LeftContentImage: ImageProps = {
 }
 
 const RightContentFlex: FlexProps = {
-    width: "43%",
+    width: "46%",
     flexDirection: "column"
 }
 
