@@ -10,7 +10,7 @@ const WrapperBox: BoxProps = {
 }
 
 const LogoProps: ImageProps = {
-    height: "40px",
+    height: "60px",
     filter: "grayscale(100%)",
     margin: "1",
     userSelect: "none"
