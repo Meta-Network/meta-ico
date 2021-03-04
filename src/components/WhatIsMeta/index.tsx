@@ -46,16 +46,16 @@ export function WhatIsMeta() {
     return (
         <Flex {...WrapperFlex}>
             <Flex {...LeftContentFlex}>
-                <Heading {...TitleHeading}>What is Meta?</Heading>
+                <Heading {...TitleHeading}>Why Meta?</Heading>
                 <Line />
-                <Introduction title="Social money">
-                    Benefit from the latest in blockchain and web security verification standards with end-to-end authentication that enables superior data integrity.Benefit from the latest in blockchain and web security verification standards with end-to-end authentication that enables superior data integrity.
+                <Introduction title="Prefunded projects">
+                    Creators can raise money via a token to create something (e.g., write an essay) and then the holders of that token will accrue value for early support of the project.
                 </Introduction>
-                <Introduction title="High profit">
-                    Benefit from the latest in blockchain and web security verification standards with end-to-end authentication that enables superior data integrity.Benefit from the latest in blockchain and web security verification standards with end-to-end authentication that enables superior data integrity.
+                <Introduction title="Programmable revenues">
+                    When a creator makes something, they can generate value across the lifetime of that object from such as art resales or song streams.
                 </Introduction>
-                <Introduction title="Platform crypto">
-                    Benefit from the latest in blockchain and web security verification standards with end-to-end authentication that enables superior data integrity.Benefit from the latest in blockchain and web security verification standards with end-to-end authentication that enables superior data integrity.
+                <Introduction title="Access">
+                    Many communities today are freely available to the masses. Tokenization can enable unique access requirements which incentivize communities and users to pay for access and participate more actively.
                 </Introduction>
                 <Box {...ButtonWrapperBox}>
                     <Button {...MoreInfoButton} rightIcon={<ArrowRight />} colorScheme="mttk" variant="solid">
