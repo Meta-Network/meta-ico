@@ -29,7 +29,7 @@ export default function WhyMeta(props: any) {
     <Heading {...TitleProp}>
       Why Meta?
     </Heading>
-    <Grid margin="128px 0" templateColumns="repeat(4, 1fr)" gap={6}>
+    <Grid margin="64px 0 128px" templateColumns="repeat(4, 1fr)" gap={6}>
       <Image src={Icon1} w="128px" {...ImageProp} />
       <Image src={Icon2} w="112px" {...ImageProp} />
       <Image src={Icon3} w="140px" {...ImageProp} />
