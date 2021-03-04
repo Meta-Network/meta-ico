@@ -1,4 +1,4 @@
-import { Flex, FlexProps, Heading, Grid, GridItem, Image, Text, TextProps, Center, ImageProps } from "@chakra-ui/react";
+import { Flex, FlexProps, Heading, Grid, GridItem, Image, Text, TextProps, Center, ImageProps, HeadingProps } from "@chakra-ui/react";
 import { Box } from "react-feather";
 import Icon1 from "../../../public/assets/icon1@2x.png";
 import Icon2 from "../../../public/assets/icon2@2x.png";
@@ -17,9 +17,16 @@ const TextProp: TextProps = {
   fontSize: "20px",
 }
 
+const TitleProp: HeadingProps = {
+  fontFamily: "DINAlternate-Bold, DINAlternate",
+  fontSize: "56px",
+  fontWeight: "bold",
+  lineHeight: "66px"
+}
+
 export default function WhyMeta(props: any) {
   return (<>
-    <Heading>
+    <Heading {...TitleProp}>
       Why Meta?
     </Heading>
     <Grid margin="128px 0" templateColumns="repeat(4, 1fr)" gap={6}>

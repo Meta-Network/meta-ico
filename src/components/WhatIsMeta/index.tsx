@@ -6,12 +6,12 @@ import { Line } from "../Line"
 
 const WrapperFlex: FlexProps = {
     width: "100%",
-    maxWidth: '1472px',
+    maxWidth: '1280px',
     margin: '128px auto'
 }
 
 const LeftContentFlex: FlexProps = {
-    width: "45%",
+    width: "46%",
     flexDirection: "column"
 }
 
@@ -34,7 +34,7 @@ const MoreInfoButton: ButtonProps = {
 }
 
 const RightContentBox: BoxProps = {
-    width: "38%",
+    width: "40%",
     alignSelf: "center"
 }
 
