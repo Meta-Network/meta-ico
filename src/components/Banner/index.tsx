@@ -10,7 +10,7 @@ const WrapperBox: BoxProps = {
     backgroundRepeat: "no-repeat",
     backgroundColor: "#542DE0",
     backgroundSize: "cover",
-    marginTop: "-2px"
+    marginTop: "-73px"
 }
 
 export function Banner() {

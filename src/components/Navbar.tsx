@@ -10,7 +10,7 @@ import { useRouter } from "next/router";
 import { getShortedAddress } from '../utils';
 
 const WrapperBox: BoxProps = {
-  backgroundColor: '#542DE0',
+  backgroundColor: 'transparent',
   position: "sticky"
 }
 
