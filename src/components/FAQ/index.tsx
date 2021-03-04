@@ -8,7 +8,7 @@ import { Accordion } from "./components/Accordion"
 const WrapperBox: BoxProps = {
     width: "100%",
     maxWidth: "1280px",
-    margin: "128px auto"
+    margin: "0 auto 128px"
 }
 
 const TitleHeading: HeadingProps = {
