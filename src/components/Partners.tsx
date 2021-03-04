@@ -3,6 +3,7 @@ import LogoArweave from "../assets/img/logo-arweave.svg";
 import LogoPolygon from "../assets/img/logo-polygon.png";
 import LogoXOrder from "../assets/img/logo-xorder.png";
 import LogoGitcoin from "../assets/img/logo-gitcoin.png";
+import LogoLoop from "../assets/img/logo-loop.png";
 
 const WrapperBox: BoxProps = {
     width: "100%",
@@ -38,7 +39,8 @@ const logosUrls: string[] = [
     LogoArweave,
     LogoPolygon,
     LogoXOrder,
-    LogoGitcoin
+    LogoGitcoin,
+    LogoLoop    
 ]
 
 export function PartnersDisplay() {
