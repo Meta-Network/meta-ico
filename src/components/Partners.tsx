@@ -37,18 +37,6 @@ const logosUrls: string[] = [
     LogoArweave,
     LogoPolygon,
     LogoXOrder,
-    // Just test for the layout
-    "https://raw.githubusercontent.com/ethglobal/sponsor-logos/master/arweave.svg",
-    "https://polygon.technology/wp-content/uploads/2021/01/logo-polygon.png",
-    "https://raw.githubusercontent.com/ethglobal/sponsor-logos/master/arweave.svg",
-    "https://polygon.technology/wp-content/uploads/2021/01/logo-polygon.png",
-    "https://raw.githubusercontent.com/ethglobal/sponsor-logos/master/arweave.svg",
-    "https://polygon.technology/wp-content/uploads/2021/01/logo-polygon.png",
-    "https://raw.githubusercontent.com/ethglobal/sponsor-logos/master/arweave.svg",
-    "https://polygon.technology/wp-content/uploads/2021/01/logo-polygon.png",
-    "https://raw.githubusercontent.com/ethglobal/sponsor-logos/master/arweave.svg",
-    "https://polygon.technology/wp-content/uploads/2021/01/logo-polygon.png",
-    "https://raw.githubusercontent.com/ethglobal/sponsor-logos/master/arweave.svg",
 ]
 
 export function PartnersDisplay() {
