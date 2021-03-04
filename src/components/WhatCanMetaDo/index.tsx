@@ -28,11 +28,11 @@ const ContentGrid: GridProps = {
 export function WhatCanMetaDo() {
     return (
         <Box {...WrapperBox}>
-            <Heading {...TitleHeading}>What can Meta do?</Heading>
+            <Heading {...TitleHeading}>What's going on in Meta Ecosystem</a></Heading>
             <Grid {...ContentGrid}>
                 <Product name="Matataki" logo={LogoMatataki}>Fan-Ticket based digital library which is publicly immortalized.</Product>
-                <Product name="Quest" logo={LogoQuest}>The future of crowdsourcing gig economy.</Product>
-                <Product name="ArcLight" logo={LogoArcLight}>When Music meets Permaweb.</Product>
+                <Product name="Quest" logo={LogoQuest}>A community of future crowdsourcing gig economy.</Product>
+                <Product name="ArcLight" logo={LogoArcLight}>When Music meets Permaweb...</Product>
             </Grid>
         </Box>
     )
