@@ -1,8 +1,9 @@
-import { Flex, Box, Button, useDisclosure, Text, TextProps, Spacer, Progress, Stack } from "@chakra-ui/react";
+import { Flex, Box, Button, useDisclosure, Text, TextProps, Spacer, Stack } from "@chakra-ui/react";
+import { Progress } from "./compoents/CustomProgress";
 import { useWallet } from "use-wallet";
-import MetaCoinLogo from "../../public/assets/logo_meta@2x.png";
+import MetaCoinLogo from "../../../public/assets/logo_meta@2x.png";
 import { Image } from "@chakra-ui/react";
-import { ConnectWalletModal } from "./ConnectWalletModal";
+import { ConnectWalletModal } from "../ConnectWalletModal";
 
 const HeadTextProps: TextProps = {
     fontWeight: 500
