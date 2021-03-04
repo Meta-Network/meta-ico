@@ -1,8 +1,7 @@
 import styles from '../styles/navbar.module.css'
 import {
   Flex, Spacer, Heading, Button, Box, Link as StyledLink,
-  useDisclosure, Modal, ModalBody, ModalOverlay, ModalFooter, ModalContent, ModalCloseButton, ModalHeader,
-  ButtonGroup, FlexProps
+  useDisclosure, FlexProps, BoxProps, ButtonProps
 } from "@chakra-ui/react"
 import { ConnectWalletModal } from "./ConnectWalletModal";
 import Link from "next/link";
@@ -10,10 +9,22 @@ import { useWallet } from "use-wallet";
 import { useRouter } from "next/router";
 import { getShortedAddress } from '../utils';
 
+const WrapperBox: BoxProps = {
+  backgroundColor: '#542DE0',
+  position: "sticky"
+}
+
 const FlexHeader: FlexProps = {
+  color: "#FFFFFF",
   maxWidth: '1472px',
   marginLeft: 'auto',
-  marginRight: 'auto'
+  marginRight: 'auto',
+  paddingTop: '1rem',
+  paddingBottom: '1rem'
+}
+
+const ConnectButton: ButtonProps = {
+  color: '#542DE0'
 }
 
 export function Navbar() {
@@ -35,22 +46,28 @@ export function Navbar() {
   //   </nav>
   //   </section>
   // </section>
-  return <Flex margin="1rem" { ...FlexHeader }>
-    <Box p="2">
-      <Heading size="md">
-        <Link href="/">Meta Network</Link>
-      </Heading>
-    </Box>
-    <Spacer />
+  return (
+    <Box {...WrapperBox}>
+      <Flex { ...FlexHeader }>
+        <Box p="2">
+          <Heading size="md">
+            <Link href="/">Meta Network</Link>
+          </Heading>
+        </Box>
+        <Spacer />
 
-    <Box>
-      <StyledLink href="#" isExternal marginRight="0.5rem">Blog</StyledLink>
-      <StyledLink href="#" isExternal marginRight="0.5rem">GitHub</StyledLink>
-      {wallet.status === 'connected' ? <>
-        <span className={styles.address}>👛 {getShortedAddress(wallet.account)}</span>
-        <Button colorScheme="red" variant="outline" onClick={() => wallet.reset()}>Disconnect</Button>
-      </> : <Button onClick={onOpen}>Connect Wallet</Button>}
+        <Box>
+          <StyledLink href="#" isExternal marginRight="0.5rem">Blog</StyledLink>
+          <StyledLink href="#" isExternal marginRight="0.5rem">GitHub</StyledLink>
+          {wallet.status === 'connected' ? (
+            <>
+              <span className={styles.address}>👛 {getShortedAddress(wallet.account)}</span>
+              <Button colorScheme="red" variant="outline" onClick={() => wallet.reset()}>Disconnect</Button>
+            </>
+          ) : <Button {...ConnectButton} onClick={onOpen}>Connect Wallet</Button>}
+        </Box>
+        <ConnectWalletModal isOpen={isOpen} onClose={onClose} />
+      </Flex>
     </Box>
-    <ConnectWalletModal isOpen={isOpen} onClose={onClose} />
-  </Flex>
+  )
 }

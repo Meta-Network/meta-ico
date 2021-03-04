@@ -8,6 +8,7 @@ import styles from '../styles/Home.module.css'
 import Footer from '../components/Footer/index';
 import { ChakraProvider, extendTheme } from "@chakra-ui/react"
 import { WalletErrorPopup } from '../components/WalletError';
+import { Banner } from '../components/Banner';
 
 const theme = extendTheme({
   colors: {
@@ -36,6 +37,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
+      <Banner />
       <div className={styles.container}>
         <Component {...pageProps} />
         <Footer />
