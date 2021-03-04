@@ -1,4 +1,4 @@
-import { Flex, Box, Button, useDisclosure, Text, TextProps, Spacer, Stack } from "@chakra-ui/react";
+import { Flex, Box, Button, FlexProps, useDisclosure, Text, TextProps, Spacer, Stack } from "@chakra-ui/react";
 import { Progress } from "./compoents/CustomProgress";
 import { useWallet } from "use-wallet";
 import MetaCoinLogo from "../../../public/assets/logo_meta@2x.png";
@@ -25,6 +25,11 @@ const unitTextProps: TextProps = {
     marginLeft:2
 }
 
+const TokenDistributionStyles: FlexProps = {
+    margin: "0 auto 128px",
+    fontFamily: "DINAlternate-Bold,DINAlternate"
+}
+
 export function TokenDistribution() {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const metaTotalSupply = 1145141919810
@@ -32,7 +37,7 @@ export function TokenDistribution() {
     const percentage = (metaSold / metaTotalSupply * 100);
     const isNearlyEnd = percentage >= 90
     const wallet = useWallet()
-    return <Flex fontFamily="DINAlternate-Bold,DINAlternate">
+    return <Flex {...TokenDistributionStyles}>
         <Box p="2" display='grid'>
             <Image src={MetaCoinLogo} width={256} height={256} />
           {wallet.status !== 'connected'
