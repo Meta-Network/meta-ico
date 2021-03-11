@@ -1,0 +1,43 @@
+.container {
+  width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto 200px;
+  gap: 24px 0;
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+  }
+}
+
+
+
+.mtk,
+.quest,
+.arclight {
+  display: flex;
+  transition: transform .2s;
+  img {
+    margin-right: 16px;
+  }
+
+  &:hover {
+    transform: translateY(-4px)
+  }
+}
+
+.mtk {
+  img {
+    height: 90px;
+  }
+}
+
+.quest {
+  img {
+    height: 90px;
+  }
+}
+
+.arclight {
+  img {
+    height: 90px;
+  }
+}

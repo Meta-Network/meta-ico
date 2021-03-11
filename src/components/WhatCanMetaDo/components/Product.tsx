@@ -1,5 +1,6 @@
 import { Flex, FlexProps, Heading, HeadingProps, Image, ImageProps, Text, TextProps } from "@chakra-ui/react"
 import React from "react"
+import Link from "next/link";
 
 const LogoImage: ImageProps = {
     width: "160px",
@@ -22,18 +23,22 @@ const ContentHeading: HeadingProps = {
 }
 
 export interface ProductProps {
+    className: string,
     logo: string
     name: string
+    url: string
 }
 
-export const Product: React.FC<ProductProps> = ({ logo, name, children }) => {
+export const Product: React.FC<ProductProps> = ({ className, logo, name, url, children }) => {
     return (
-        <Flex>
-            <Image {...LogoImage} src={logo} />
-            <Flex {...ContentFlex}>
-                <Heading {...ContentHeading}>{name}</Heading>
-                <Text>{children}</Text>
-            </Flex>
-        </Flex>
+        <Link href={url}>
+            <a target="_blank" className={className}>
+                <Image src={logo} />
+                <Flex {...ContentFlex} className="text">
+                    <Heading {...ContentHeading}>{name}</Heading>
+                    <Text>{children}</Text>
+                </Flex>
+            </a>
+        </Link>
     )
 }
