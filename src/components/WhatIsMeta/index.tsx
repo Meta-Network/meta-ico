@@ -46,7 +46,7 @@ export function WhatIsMeta() {
     return (
         <Flex {...WrapperFlex}>
             <Flex {...LeftContentFlex}>
-                <Heading {...TitleHeading}>Why Meta?</Heading>
+                <Heading {...TitleHeading}>What is Meta?</Heading>
                 <Line />
                 <Introduction title="Prefunded projects">
                     Creators can raise money via a token to create something (e.g., write an essay) and then the holders of that token will accrue value for early support of the project.
