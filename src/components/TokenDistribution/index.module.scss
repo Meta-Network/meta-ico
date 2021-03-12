@@ -1,0 +1,26 @@
+.progress {
+  margin: 55px 0 10px 0;
+  height: 24px !important;
+}
+
+.stack-container {
+  margin-top: 24px;
+}
+
+.number-text {
+  font-size: 40px;
+  font-family: DINAlternate-Bold, DINAlternate;
+  font-weight: bold;
+  color: #333333;
+  line-height: 1;
+
+  sub {
+    bottom: 0.25rem;
+    font-size: 14px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #B2B2B2;
+    line-height: 1;
+    margin-left: 4px;
+  }
+}

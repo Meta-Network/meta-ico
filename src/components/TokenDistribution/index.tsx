@@ -1,34 +1,47 @@
-import { Flex, Box, Button, FlexProps, useDisclosure, Text, TextProps, Spacer, Stack, ButtonProps } from "@chakra-ui/react";
+import { Flex, Box, Button, FlexProps, useDisclosure, Text, TextProps, Spacer, Stack, ButtonProps, BoxProps } from "@chakra-ui/react";
 import { Progress } from "./compoents/CustomProgress";
 import { useWallet } from "use-wallet";
 import MetaCoinLogo from "../../../public/assets/logo_meta@2x.png";
 import { Image, ImageProps } from "@chakra-ui/react";
 import { ConnectWalletModal } from "../ConnectWalletModal";
 
+import styles from './index.module.scss';
+
 const HeadTextProps: TextProps = {
-    fontWeight: 500
+    fontSize: '16px',
+    fontFamily: 'PingFangSC-Medium, PingFang SC',
+    fontWeight: 500,
+    color: '#333',
 }
 
 const NumberTextProps: TextProps = {
-    fontSize: "4xl",
-    fontWeight: "bold"
+    fontSize: '40px',
+    fontFamily: 'DINAlternate-Bold, DINAlternate',
+    fontWeight: 'bold',
+    color: '#333333',
+    lineHeight: 1,
+    marginTop: '8px'
 }
 
 const minorTextProps: TextProps = {
-    fontSize: "xs",
-    color: "gray.500"
+    fontSize: "14px",
+    fontFamily: 'PingFangSC-Medium, PingFang SC',
+    fontWeight: 500,
+    color: '#B2B2B2',
 }
 
 
 const unitTextProps: TextProps = {
     ...minorTextProps,
-    marginLeft:2
+    marginLeft: 2
 }
 
 const TokenDistributionStyles: FlexProps = {
-    width: "1000px",
+    width: "1200px",
+    padding: '20px',
     margin: "0 auto 128px",
-    fontFamily: "DINAlternate-Bold,DINAlternate"
+    fontFamily: "DINAlternate-Bold,DINAlternate",
+    boxSizing: 'border-box'
 }
 
 const TitleText: TextProps = {
@@ -42,15 +55,20 @@ const TitleText: TextProps = {
 const LogoImage: ImageProps = {
     width: "256px",
     height: "256px",
-    padding: "40px"
+    padding: '20px',
 }
 
 const RoundButton: ButtonProps = {
-    marginTop: 2,
+    marginTop: '40px',
     rounded: 24,
     width: "192px",
     marginLeft: "auto",
     marginRight: "auto"
+}
+
+const TextContainerProps: BoxProps = {
+    flex: '1',
+    margin: '0 0 0 120px;'
 }
 
 export function TokenDistribution() {
@@ -63,37 +81,36 @@ export function TokenDistribution() {
     return (
         <Flex {...TokenDistributionStyles}>
             <Box p="2" display='grid' justifyContent="center">
-                <Image {...LogoImage} src={MetaCoinLogo}  />
+                <Image {...LogoImage} src={MetaCoinLogo} />
                 {wallet.status !== 'connected'
-                    ? <Button {...RoundButton} onClick={onOpen}>Connect wallet</Button>
+                    ? <Button {...RoundButton} colorScheme="mttk" onClick={onOpen}>Connect wallet</Button>
                     : <Button {...RoundButton} colorScheme="mttk">Get Meta Now!</Button>}
             </Box>
-            <Spacer />
-            <Box width={640}>
+            <Box {...TextContainerProps}>
                 <Text {...TitleText}>META Token Distribution</Text>
                 <Text {...HeadTextProps}>TOTAL DISTRIBUTED</Text>
-                <Progress value={percentage} borderRadius={15} colorScheme="orange" />
-                <Flex>
+                <Progress className={styles.progress} value={percentage} borderRadius={15} colorScheme="orange" />
+                <Flex justifyContent="space-between">
                     <Text {...minorTextProps}>0 META</Text>
-                    <Spacer />
                     <Text {...minorTextProps}>{metaTotalSupply} META</Text>
                 </Flex>
-                <Stack>
+                <Stack className={styles['stack-container']}>
                     <Text {...HeadTextProps}>CURRENT DISTRIBUTION</Text>
-                    <Flex>
+                    <Flex justifyContent="space-between" style={{ marginTop: 8 }}>
                         <Flex alignItems="baseline">
-                            <Text {...NumberTextProps}>100000000</Text>
-                            <Text {...unitTextProps}>META</Text>
+                            <Text className={styles['number-text']}>
+                                100000000<sub>META</sub>
+                            </Text>
                         </Flex>
-                        <Spacer />
                         <Flex alignItems="baseline">
-                            <Text {...NumberTextProps}>114514</Text>
-                            <Text  {...unitTextProps}>BNB Received</Text>
+                            <Text className={styles['number-text']}>
+                                114514<sub>BNB Received</sub>
+                            </Text>
                         </Flex>
                     </Flex>
-                    <Box>
+                    <Box style={{ marginTop: 24 }}>
                         <Text {...HeadTextProps}>CURRENT DISTRIBUTION ENDS IN</Text>
-                        <Text {...NumberTextProps}>11:45:14:55</Text>
+                        <Text {...NumberTextProps}>11:45:14</Text>
                     </Box>
                 </Stack>
             </Box>
