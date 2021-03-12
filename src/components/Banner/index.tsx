@@ -1,20 +1,261 @@
 import { Box, BoxProps } from "@chakra-ui/react"
-import React from "react"
+import React, { useEffect, useState, useRef } from "react"
 import ImgMetaBanner from "../../assets/img/img-metabanner.png"
+import bannerCity from "../../assets/img/banner-city.png"
+import bannerPlanet from "../../assets/img/banner-planet.png"
+import bannerCrane from '../../assets/crane.svg';
+import bannerStar from '../../assets/banner-star.svg';
+import bannerCrane1 from '../../assets/banner-planet1.svg';
+import bannerMeta from '../../assets/banner-meta.png';
+import { ReactSVG } from 'react-svg'
 
-const WrapperBox: BoxProps = {
-    width: "100%",
-    height: "1000px",
-    backgroundImage: `url(${ImgMetaBanner})`,
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    backgroundColor: "#542DE0",
-    backgroundSize: "cover",
-    marginTop: "-73px"
+import styled from 'styled-components';
+import { useMount } from 'ahooks';
+
+const StyledWrapper = styled.div`
+width: 100%;
+height: 1000px;
+background-position: center;
+background-repeat: no-repeat;
+background-color: #542DE0;
+background-size: cover;
+/* background-image: url(${ImgMetaBanner}); */
+position: relative;
+overflow: hidden;
+
+.bc {
+  position: absolute;
+  left: -170px;
+  bottom: -6px;
+  width: 1444px;
+  height: 400px;
+  z-index: 1;
+  overflow: hidden;
+
+  @media screen and (max-width: 1600px) {
+    left: -400px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    left: -1000px;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  img {
+    height: 100%;
+  }
 }
 
+.planet {
+  height: 174px;
+  left: 50px;
+  position: absolute;
+  top: 40px;
+  z-index: 3;
+  animation: rotateCrane1 linear 60s infinite;
+
+}
+
+.crane {
+  position: absolute;
+  right: -50px;
+  bottom: -6px;
+  z-index: 2;
+
+  .line {
+    transform: scaleY(0);
+    animation: line linear 5s infinite alternate;
+  }
+
+  .window {
+    transform: translateY(0);
+    animation: window linear 5s infinite alternate;
+  }
+
+  .line1 {
+    transform: scaleY(0);
+    animation: line1 linear 8s infinite alternate;
+  }
+
+  .window1 {
+    transform: translateY(0);
+    animation: window1 linear 8s infinite alternate;
+  }
+
+  .box {
+    animation: box linear 10s infinite alternate;
+  }
+
+  .box1 {
+    animation: box1 linear 10s infinite alternate;
+  }
+}
+
+.star {
+  margin: -40px auto;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+}
+
+.crane1 {
+  position: absolute;
+  right: 550px;
+  top: 120px;
+  z-index: 2;
+  animation: rotateCrane linear 5s infinite alternate;
+
+  @media screen and (max-width: 1920px) {
+    right: 100px;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.meta {
+  z-index: 4;
+  width: 890px;
+  margin: 0 auto;
+  position: absolute;
+  left: 44%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+
+  @media screen and (min-width: 1920px) {
+    width: 1000px;
+    bottom: -30px;
+  }
+
+  @media screen and (max-width: 1920px) {
+    width: 800px;
+    bottom: -50px;
+  }
+
+  @media screen and (max-width: 1600px) {
+    width: 600px;
+    bottom: 0px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 400px;
+  }
+}
+
+@keyframes rotateCrane {
+  0% {
+    transform: rotate(4deg) translateX(20px);
+  }
+
+  100% {
+    transform: rotate(-4deg) translateX(-20px);
+  }
+}
+
+@keyframes rotateCrane1 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes window {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(100px);
+  }
+}
+
+@keyframes line {
+  0% {
+    transform: scaleY(0);
+  }
+
+  100% {
+    transform: scaleY(1.2);
+  }
+}
+
+@keyframes window1 {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(110px);
+  }
+}
+
+@keyframes line1 {
+  0% {
+    transform: scaleY(0);
+  }
+
+  100% {
+    transform: scaleY(1.55);
+  }
+}
+
+@keyframes box {
+  0% {
+    transform: translateX(20px);
+  }
+
+  100% {
+    transform: translateX(-66px);
+  }
+}
+
+@keyframes box1 {
+  0% {
+    transform: translateX(-30px);
+  }
+
+  100% {
+    transform: translateX(30px);
+  }
+}
+`
+
 export function Banner() {
+
+    const resizeFn = () => {
+        const wrapperRef: any = document.querySelector('#banner')
+        console.log('wrapperRef', wrapperRef)
+        const clientHeight = document.documentElement.clientHeight || document.body.clientHeight
+        if (clientHeight > 600) {
+            wrapperRef.style.height = `${clientHeight}px`
+        } else {
+            wrapperRef.style.height = '600px'
+        }
+    }
+
+    useMount(() => {
+        resizeFn()
+        window.addEventListener('resize', resizeFn, false)
+    })
+
     return (
-        <Box {...WrapperBox}></Box>
+        <StyledWrapper id='banner'>
+            <img src={bannerPlanet} alt="planet" className="planet" />
+            <div className="bc">
+                <img src={bannerCity} alt="city" />
+            </div>
+            <ReactSVG src={bannerCrane} className="crane" />
+            <ReactSVG src={bannerStar} className="star" />
+            <ReactSVG src={bannerCrane1} className="crane1" />
+            <img src={bannerMeta} className="meta" />
+        </StyledWrapper>
     )
 }

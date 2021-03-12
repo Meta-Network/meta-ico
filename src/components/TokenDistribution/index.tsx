@@ -36,15 +36,8 @@ const unitTextProps: TextProps = {
     marginLeft: 2
 }
 
-const TokenDistributionStyles: FlexProps = {
-    width: "1200px",
-    padding: '20px',
-    margin: "0 auto 128px",
-    fontFamily: "DINAlternate-Bold,DINAlternate",
-    boxSizing: 'border-box'
-}
-
 const TitleText: TextProps = {
+    fontFamily: 'DINAlternate-Bold, DINAlternate',
     color: "#333333",
     fontSize: "56px",
     fontWeight: "bold",
@@ -56,9 +49,11 @@ const LogoImage: ImageProps = {
     width: "256px",
     height: "256px",
     padding: '20px',
+    boxSizing: 'border-box'
 }
 
 const RoundButton: ButtonProps = {
+    fontFamily: 'PingFangSC-Medium, PingFang SC',
     marginTop: '40px',
     rounded: 24,
     width: "192px",
@@ -66,10 +61,6 @@ const RoundButton: ButtonProps = {
     marginRight: "auto"
 }
 
-const TextContainerProps: BoxProps = {
-    flex: '1',
-    margin: '0 0 0 120px;'
-}
 
 export function TokenDistribution() {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -79,14 +70,14 @@ export function TokenDistribution() {
     const isNearlyEnd = percentage >= 90
     const wallet = useWallet()
     return (
-        <Flex {...TokenDistributionStyles}>
-            <Box p="2" display='grid' justifyContent="center">
+        <Flex className={ styles.wrapper }>
+            <Box display='grid' justifyContent="center">
                 <Image {...LogoImage} src={MetaCoinLogo} />
                 {wallet.status !== 'connected'
                     ? <Button {...RoundButton} colorScheme="mttk" onClick={onOpen}>Connect wallet</Button>
                     : <Button {...RoundButton} colorScheme="mttk">Get Meta Now!</Button>}
             </Box>
-            <Box {...TextContainerProps}>
+            <Box className={ styles['info-wrapper'] }>
                 <Text {...TitleText}>META Token Distribution</Text>
                 <Text {...HeadTextProps}>TOTAL DISTRIBUTED</Text>
                 <Progress className={styles.progress} value={percentage} borderRadius={15} colorScheme="orange" />

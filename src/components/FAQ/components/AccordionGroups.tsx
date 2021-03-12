@@ -3,6 +3,7 @@ import React from "react"
 import { Line } from "../../Line"
 
 const WrapperBox: BoxProps = {
+    width: '100%',
     maxWidth: "640px",
     marginTop: "24px"
 }

@@ -22,11 +22,6 @@ const TitleHeading: HeadingProps = {
     marginBottom: "100px"
 }
 
-const ContentGrid: GridProps = {
-    templateColumns: "repeat(3, 1fr)",
-    gap: '60px'
-}
-
 export function WhatCanMetaDo() {
 
     const productList = [
@@ -56,7 +51,7 @@ export function WhatCanMetaDo() {
     return (
         <Box className={styles.container}>
             <Heading {...TitleHeading}>What's going on in Meta Ecosystem</Heading>
-            <Grid {...ContentGrid}>
+            <Grid className={ styles.item }>
                 {
                     productList.map((i: any, idx: number) => (
                         <Product key={idx} className={styles[i.className]} name={ i.name } logo={i.logo} url={ i.url }>{ i.text }</Product>

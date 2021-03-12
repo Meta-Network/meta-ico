@@ -9,28 +9,47 @@ import { useWallet } from "use-wallet";
 import { useRouter } from "next/router";
 import { getShortedAddress } from '../utils';
 
-const WrapperBox: BoxProps = {
-  backgroundColor: 'transparent',
-  position: "sticky"
-}
+import styled from 'styled-components';
+import { useEffect, useState } from 'react';
+import cn from 'classnames'
 
-const FlexHeader: FlexProps = {
-  color: "#FFFFFF",
-  maxWidth: '1472px',
-  marginLeft: 'auto',
-  marginRight: 'auto',
-  paddingTop: '1rem',
-  paddingBottom: '1rem'
-}
 
 const ConnectButton: ButtonProps = {
   color: '#542DE0'
 }
 
+const StyledHeader = styled(Flex)`
+  color: #fff;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  transition: all .3s;
+  z-index: 10;
+  &.active {
+    background-color: #fff;
+    color: #542DE0;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 10%);
+  }
+`
+const StyledHeaderWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1400px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+`
+
 export function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const wallet = useWallet()
   const router = useRouter()
+  const [active, setActive] = useState<boolean>(false)
   // return <section className="navbar site-section no-margin">
   //   <section className="section-container">
   //     <h1 className="logo">
@@ -46,15 +65,30 @@ export function Navbar() {
   //   </nav>
   //   </section>
   // </section>
+
+  const scrollFn = () => {
+    let scrollTop = document.documentElement.scrollTop || document.body.scrollTop
+    if (scrollTop > 60) {
+      setActive(true)
+    } else {
+      setActive(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', scrollFn, false)
+  })
+
   return (
-    <Box {...WrapperBox}>
-      <Flex { ...FlexHeader }>
+    <StyledHeader className={cn({
+      'active': active
+    })}>
+      <StyledHeaderWrapper>
         <Box p="2">
           <Heading size="md">
             <Link href="/">Meta Network</Link>
           </Heading>
         </Box>
-        <Spacer />
 
         <Box>
           <StyledLink href="#" isExternal marginRight="0.5rem">Blog</StyledLink>
@@ -67,7 +101,7 @@ export function Navbar() {
           ) : <Button {...ConnectButton} onClick={onOpen}>Connect Wallet</Button>}
         </Box>
         <ConnectWalletModal isOpen={isOpen} onClose={onClose} />
-      </Flex>
-    </Box>
+      </StyledHeaderWrapper>
+    </StyledHeader>
   )
 }
