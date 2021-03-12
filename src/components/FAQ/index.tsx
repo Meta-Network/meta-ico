@@ -7,8 +7,8 @@ import { Accordion } from "./components/Accordion"
 
 const WrapperBox: BoxProps = {
     width: "100%",
-    maxWidth: "1280px",
-    margin: "0 auto 128px"
+    maxWidth: "1400px",
+    margin: "0 auto 100px"
 }
 
 const TitleHeading: HeadingProps = {
@@ -17,7 +17,7 @@ const TitleHeading: HeadingProps = {
     fontWeight: "bold",
     fontFamily: "DINAlternate-Bold, DINAlternate",
     lineHeight: "66px",
-    marginBottom: "64px"
+    marginBottom: "100px"
 }
 
 const LeftContentBox: BoxProps = {
