@@ -4,14 +4,10 @@ import ImgWhatIsMeta from "../../assets/img/img-whatismeta.png"
 import { Introduction } from "./components/Introduction"
 import { Line } from "../Line"
 
-const WrapperFlex: FlexProps = {
-    width: "100%",
-    maxWidth: '1280px',
-    margin: '128px auto'
-}
+import styles from "./index.module.scss";
 
 const LeftContentFlex: FlexProps = {
-    width: "46%",
+    width: "60%",
     flexDirection: "column"
 }
 
@@ -35,7 +31,8 @@ const MoreInfoButton: ButtonProps = {
 
 const RightContentBox: BoxProps = {
     width: "40%",
-    alignSelf: "center"
+    alignSelf: "center",
+    overflow: 'hidden'
 }
 
 const RigntContentImage: ImageProps = {
@@ -44,8 +41,8 @@ const RigntContentImage: ImageProps = {
 
 export function WhatIsMeta() {
     return (
-        <Flex {...WrapperFlex}>
-            <Flex {...LeftContentFlex}>
+        <Flex className={ styles.wrapper }>
+            <Flex className={ styles['left-content'] }>
                 <Heading {...TitleHeading}>What is Meta?</Heading>
                 <Line />
                 <Introduction title="Prefunded projects">
@@ -63,8 +60,7 @@ export function WhatIsMeta() {
                     </Button>
                 </Box>
             </Flex>
-            <Spacer />
-            <Box {...RightContentBox}>
+            <Box className={ styles['right-content'] }>
                 <Image {...RigntContentImage} src={ImgWhatIsMeta} />
             </Box>
         </Flex>

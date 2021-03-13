@@ -7,8 +7,10 @@ import LogoLoop from "../assets/img/logo-loop.png";
 
 const WrapperBox: BoxProps = {
     width: "100%",
-    maxWidth: '1280px',
-    margin: '0 auto 128px'
+    maxWidth: '1400px',
+    padding: '20px',
+    margin: '0 auto 200px',
+    boxSizing: 'border-box',
 }
 
 const LogoProps: ImageProps = {
@@ -25,7 +27,7 @@ const TitleHeading: HeadingProps = {
     fontFamily: "DINAlternate-Bold, DINAlternate",
     lineHeight: "66px",
     textAlign: "center",
-    marginBottom: "64px"
+    marginBottom: "100px"
 }
 
 const LogoWrap: WrapProps = {

@@ -4,12 +4,7 @@ import ImgFAQ from "../../assets/img/img-faq.png"
 import { Line } from "../Line"
 import { AccordionGroups } from "./components/AccordionGroups"
 import { Accordion } from "./components/Accordion"
-
-const WrapperBox: BoxProps = {
-    width: "100%",
-    maxWidth: "1280px",
-    margin: "0 auto 128px"
-}
+import styles from './index.module.scss';
 
 const TitleHeading: HeadingProps = {
     color: "#333333",
@@ -17,41 +12,32 @@ const TitleHeading: HeadingProps = {
     fontWeight: "bold",
     fontFamily: "DINAlternate-Bold, DINAlternate",
     lineHeight: "66px",
-    marginBottom: "64px"
+    marginBottom: "100px"
 }
 
-const LeftContentBox: BoxProps = {
-    width: "40%"
-}
 
 const LeftContentImage: ImageProps = {
     userSelect: "none"
 }
 
-const RightContentFlex: FlexProps = {
-    width: "46%",
-    flexDirection: "column"
-}
-
 const DefaultAccordionProps: UseAccordionProps = {
-    allowMultiple: true
+    allowMultiple: true,
 }
 
 const FirstAccordionProps: UseAccordionProps = {
     ...DefaultAccordionProps,
-    defaultIndex: [0]
+    defaultIndex: [0],
 }
 
 export function FAQ() {
     return (
-        <Box {...WrapperBox}>
+        <Box className={ styles.wrapper }>
             <Heading {...TitleHeading}>FAQ</Heading>
-            <Flex>
-                <Box {...LeftContentBox}>
+            <Flex className={ styles['faq-wrapper'] }>
+                <Box className={ styles['left-content'] }>
                     <Image {...LeftContentImage} src={ImgFAQ} />
                 </Box>
-                <Spacer />
-                <Flex {...RightContentFlex}>
+                <Flex className={ styles['right-content'] }>
                     <Line />
                     <AccordionGroups title="Getting Started" accordionProps={FirstAccordionProps}>
                         <Accordion title="Where can I use Meta?">
