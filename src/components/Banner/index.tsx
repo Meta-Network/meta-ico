@@ -8,9 +8,12 @@ import bannerStar from '../../assets/banner-star.svg';
 import bannerCrane1 from '../../assets/banner-planet1.svg';
 import bannerMeta from '../../assets/banner-meta.png';
 import { ReactSVG } from 'react-svg'
+import Head from "next/head";
 
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { useMount } from 'ahooks';
+
+import styles from './index.module.scss';
 
 const StyledWrapper = styled.div`
 width: 100%;
@@ -23,6 +26,8 @@ background-size: cover;
 position: relative;
 overflow: hidden;
 
+// default 1920
+
 .bc {
   position: absolute;
   left: -170px;
@@ -32,8 +37,14 @@ overflow: hidden;
   z-index: 1;
   overflow: hidden;
 
-  @media screen and (max-width: 1600px) {
+  @media screen and (min-width: 1921px) {
+    left: 0
+  }
+
+  @media screen and (max-width: 1680px) {
     left: -400px;
+    width: 1200px;
+    height: 332.41px;
   }
 
   @media screen and (max-width: 1200px) {
@@ -56,7 +67,13 @@ overflow: hidden;
   top: 40px;
   z-index: 3;
   animation: rotateCrane1 linear 60s infinite;
-
+  @media screen and (max-width: 1680px) {
+    height: 150px;
+    top: 50px;
+  }
+  @media screen and (max-width: 768px) {
+    height: 100px;
+  }
 }
 
 .crane {
@@ -64,6 +81,29 @@ overflow: hidden;
   right: -50px;
   bottom: -6px;
   z-index: 2;
+
+  @media screen and (min-width: 1921px) {
+    right: 0
+  }
+  @media screen and (max-width: 1920px) {
+  }
+  @media screen and (max-width: 1680px) {
+    right: -100px;
+    & > svg {
+      height: 340px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    right: -50%;
+    transform: translate(-50%, 0);
+  }
+  @media screen and (max-width: 540px) {
+    transform: translate(0, 0);
+    & > svg {
+      height: 200px;
+    }
+  }
 
   .line {
     transform: scaleY(0);
@@ -94,14 +134,6 @@ overflow: hidden;
   }
 }
 
-.star {
-  margin: -40px auto;
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translate(-50%, 0);
-}
-
 .crane1 {
   position: absolute;
   right: 550px;
@@ -113,9 +145,16 @@ overflow: hidden;
     right: 100px;
   }
 
+  @media screen and (max-width: 1680px) {
+    & > svg {
+      transform: scale(0.8);
+    }
+  }
+
   @media screen and (max-width: 768px) {
     display: none;
   }
+
 }
 
 .meta {
@@ -127,8 +166,8 @@ overflow: hidden;
   bottom: 0;
   transform: translate(-50%, 0);
 
-  @media screen and (min-width: 1920px) {
-    width: 1000px;
+  @media screen and (min-width: 1921px) {
+    width: 1200px;
     bottom: -30px;
   }
 
@@ -137,12 +176,15 @@ overflow: hidden;
     bottom: -50px;
   }
 
-  @media screen and (max-width: 1600px) {
+  @media screen and (max-width: 1680px) {
     width: 600px;
     bottom: 0px;
   }
 
   @media screen and (max-width: 1200px) {
+    width: 500px;
+  }
+  @media screen and (max-width: 768px) {
     width: 400px;
   }
 }
@@ -228,6 +270,8 @@ overflow: hidden;
 }
 `
 
+
+
 export function Banner() {
 
     const resizeFn = () => {
@@ -248,12 +292,15 @@ export function Banner() {
 
     return (
         <StyledWrapper id='banner'>
+          <Head>
+            {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> */}
+          </Head>
             <img src={bannerPlanet} alt="planet" className="planet" />
             <div className="bc">
                 <img src={bannerCity} alt="city" />
             </div>
             <ReactSVG src={bannerCrane} className="crane" />
-            <ReactSVG src={bannerStar} className="star" />
+            <ReactSVG src={bannerStar} className={ `${styles.star} banner-star` } />
             <ReactSVG src={bannerCrane1} className="crane1" />
             <img src={bannerMeta} className="meta" />
         </StyledWrapper>

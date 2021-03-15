@@ -1,0 +1,19 @@
+.star {
+  margin: -40px auto;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+
+  @media screen and (max-width: 1680px) {
+    & > svg {
+      height: 380px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    & > svg {
+      height: 260px;
+    }
+  }
+}

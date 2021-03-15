@@ -3,7 +3,7 @@ import type { AppProps /*, AppContext */ } from 'next/app'
 import Head from "next/head";
 import { Navbar } from "../components/Navbar";
 import { UseWalletProvider } from "use-wallet";
-import '../styles/globals.css'
+import '../styles/globals.scss'
 import styles from '../styles/Home.module.css'
 import Footer from '../components/Footer/index';
 import { ChakraProvider, extendTheme } from "@chakra-ui/react"

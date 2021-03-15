@@ -38,11 +38,27 @@ const StyledHeaderWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   max-width: 1400px;
   padding: 10px 20px;
   box-sizing: border-box;
   margin: 0 auto;
+  @media screen and (max-width: 768px) {
+    padding: 10px;
+    .btn {
+      padding: 4px 10px;
+      font-size: 14px;
+    }
+  }
+`
+const StyledHeaderTitle = styled.a`
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
 `
 
 export function Navbar() {
@@ -84,21 +100,18 @@ export function Navbar() {
       'active': active
     })}>
       <StyledHeaderWrapper>
-        <Box p="2">
-          <Heading size="md">
-            <Link href="/">Meta Network</Link>
-          </Heading>
-        </Box>
-
+        <Link href="/">
+          <StyledHeaderTitle>Meta Network</StyledHeaderTitle>
+        </Link>
         <Box>
           <StyledLink href="#" isExternal marginRight="0.5rem">Blog</StyledLink>
           <StyledLink href="#" isExternal marginRight="0.5rem">GitHub</StyledLink>
           {wallet.status === 'connected' ? (
             <>
               <span className={styles.address}>👛 {getShortedAddress(wallet.account)}</span>
-              <Button colorScheme="red" variant="outline" onClick={() => wallet.reset()}>Disconnect</Button>
+              <Button className="btn" colorScheme="red" variant="outline" onClick={() => wallet.reset()}>Disconnect</Button>
             </>
-          ) : <Button {...ConnectButton} onClick={onOpen}>Connect Wallet</Button>}
+          ) : <Button className="btn" {...ConnectButton} onClick={onOpen}>Connect Wallet</Button>}
         </Box>
         <ConnectWalletModal isOpen={isOpen} onClose={onClose} />
       </StyledHeaderWrapper>
