@@ -7,17 +7,8 @@ import LogoArcLight from "../../assets/img/logo-arclight.png"
 
 import styles from './index.module.scss';
 
-const WrapperBox: BoxProps = {
-    maxWidth: '1280px',
-    margin: '0 auto 128px'
-}
-
 const TitleHeading: HeadingProps = {
     color: "#333333",
-    fontSize: "56px",
-    fontWeight: "bold",
-    fontFamily: "DINAlternate-Bold, DINAlternate",
-    lineHeight: "66px",
     textAlign: "center",
     marginBottom: "100px"
 }
@@ -50,7 +41,7 @@ export function WhatCanMetaDo() {
 
     return (
         <Box className={styles.container}>
-            <Heading {...TitleHeading}>What's going on in Meta Ecosystem</Heading>
+            <h2 className={ `common-title ${styles.title}` }>What's going on in Meta Ecosystem</h2>
             <Grid className={ styles.item }>
                 {
                     productList.map((i: any, idx: number) => (

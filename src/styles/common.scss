@@ -1,0 +1,13 @@
+.common-title {
+  color: #333333;
+  font-size: 56px;
+  line-height: 1.2;
+  font-weight: bold;
+  font-family: DINAlternate-Bold, DINAlternate;
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
+  }
+  @media screen and (max-width: 540px) {
+    font-size: 30px;
+  }
+}

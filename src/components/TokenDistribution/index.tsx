@@ -1,4 +1,4 @@
-import { Flex, Box, Button, FlexProps, useDisclosure, Text, TextProps, Spacer, Stack, ButtonProps, BoxProps } from "@chakra-ui/react";
+import { Flex, Box, Button, FlexProps, useDisclosure, Text, TextProps, Spacer, Heading, Stack, ButtonProps, BoxProps } from "@chakra-ui/react";
 import { Progress } from "./compoents/CustomProgress";
 import { useWallet } from "use-wallet";
 import MetaCoinLogo from "../../../public/assets/logo_meta@2x.png";
@@ -36,15 +36,6 @@ const unitTextProps: TextProps = {
     marginLeft: 2
 }
 
-const TitleText: TextProps = {
-    fontFamily: 'DINAlternate-Bold, DINAlternate',
-    color: "#333333",
-    fontSize: "56px",
-    fontWeight: "bold",
-    lineHeight: "66px",
-    marginBottom: "24px"
-}
-
 const LogoImage: ImageProps = {
     width: "256px",
     height: "256px",
@@ -78,7 +69,7 @@ export function TokenDistribution() {
                     : <Button {...RoundButton} colorScheme="mttk">Get Meta Now!</Button>}
             </Box>
             <Box className={ styles['info-wrapper'] }>
-                <Text {...TitleText}>META Token Distribution</Text>
+                <h2 className={ `common-title ${styles['token-title']}` }>META Token Distribution</h2>
                 <Text {...HeadTextProps}>TOTAL DISTRIBUTED</Text>
                 <Progress className={styles.progress} value={percentage} borderRadius={15} colorScheme="orange" />
                 <Flex justifyContent="space-between">

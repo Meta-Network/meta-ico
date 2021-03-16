@@ -1,33 +1,17 @@
 import { Box, BoxProps, Wrap, WrapProps, WrapItem, Image, ImageProps, Heading, HeadingProps } from "@chakra-ui/react";
-import LogoArweave from "../assets/img/logo-arweave.svg";
-import LogoPolygon from "../assets/img/logo-polygon.png";
-import LogoXOrder from "../assets/img/logo-xorder.png";
-import LogoGitcoin from "../assets/img/logo-gitcoin.png";
-import LogoLoop from "../assets/img/logo-loop.png";
+import LogoArweave from "../../assets/img/logo-arweave.svg";
+import LogoPolygon from "../../assets/img/logo-polygon.png";
+import LogoXOrder from "../../assets/img/logo-xorder.png";
+import LogoGitcoin from "../../assets/img/logo-gitcoin.png";
+import LogoLoop from "../../assets/img/logo-loop.png";
 
-const WrapperBox: BoxProps = {
-    width: "100%",
-    maxWidth: '1400px',
-    padding: '20px',
-    margin: '0 auto 200px',
-    boxSizing: 'border-box',
-}
+import styles from './index.module.scss';
 
 const LogoProps: ImageProps = {
     height: "60px",
     filter: "grayscale(100%)",
     margin: "1",
     userSelect: "none"
-}
-
-const TitleHeading: HeadingProps = {
-    color: "#333333",
-    fontSize: "56px",
-    fontWeight: "bold",
-    fontFamily: "DINAlternate-Bold, DINAlternate",
-    lineHeight: "66px",
-    textAlign: "center",
-    marginBottom: "100px"
 }
 
 const LogoWrap: WrapProps = {
@@ -42,13 +26,13 @@ const logosUrls: string[] = [
     LogoPolygon,
     LogoXOrder,
     LogoGitcoin,
-    LogoLoop    
+    LogoLoop
 ]
 
 export function PartnersDisplay() {
     return (
-        <Box {...WrapperBox}>
-            <Heading {...TitleHeading}>Partner & Supporter </Heading>
+        <Box className={ styles.wrapper }>
+            <h2 className={ `common-title ${styles.title}` }>Partner & Supporter </h2>
             <Wrap {...LogoWrap}>
                 {logosUrls.map((logo, idx) => (
                     <WrapItem key={idx}>

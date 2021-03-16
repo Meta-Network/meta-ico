@@ -6,15 +6,6 @@ import { AccordionGroups } from "./components/AccordionGroups"
 import { Accordion } from "./components/Accordion"
 import styles from './index.module.scss';
 
-const TitleHeading: HeadingProps = {
-    color: "#333333",
-    fontSize: "56px",
-    fontWeight: "bold",
-    fontFamily: "DINAlternate-Bold, DINAlternate",
-    lineHeight: "66px",
-    marginBottom: "100px"
-}
-
 
 const LeftContentImage: ImageProps = {
     userSelect: "none"
@@ -32,7 +23,7 @@ const FirstAccordionProps: UseAccordionProps = {
 export function FAQ() {
     return (
         <Box className={ styles.wrapper }>
-            <Heading {...TitleHeading}>FAQ</Heading>
+            <h2 className={ `common-title ${styles['faq-title']}` }>FAQ</h2>
             <Flex className={ styles['faq-wrapper'] }>
                 <Box className={ styles['left-content'] }>
                     <Image {...LeftContentImage} src={ImgFAQ} />
