@@ -1,5 +1,5 @@
 import styles from '../styles/Home.module.css'
-import { PartnersDisplay } from "../components/Partners";
+import { PartnersDisplay } from "../components/Partners/index";
 import { TokenDistribution } from '../components/TokenDistribution';
 import { WhatIsMeta } from '../components/WhatIsMeta';
 import WhyMeta from "../components/WhyMeta";

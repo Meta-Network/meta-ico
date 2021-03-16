@@ -1,0 +1,18 @@
+.wrapper {
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 20px;
+  margin: 0 auto 300px;
+  box-sizing: border-box;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 100px;
+  }
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 100px;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 60px;
+  }
+}

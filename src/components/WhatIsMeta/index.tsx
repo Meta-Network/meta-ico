@@ -6,20 +6,6 @@ import { Line } from "../Line"
 
 import styles from "./index.module.scss";
 
-const LeftContentFlex: FlexProps = {
-    width: "60%",
-    flexDirection: "column"
-}
-
-const TitleHeading: HeadingProps = {
-    color: "#333333",
-    fontSize: "56px",
-    fontWeight: "bold",
-    fontFamily: "DINAlternate-Bold, DINAlternate",
-    lineHeight: "66px",
-    marginBottom: "64px"
-}
-
 const ButtonWrapperBox: BoxProps = {
     marginTop: "64px",
     marginBottom: "24px"
@@ -27,12 +13,6 @@ const ButtonWrapperBox: BoxProps = {
 
 const MoreInfoButton: ButtonProps = {
     borderRadius: "4px"
-}
-
-const RightContentBox: BoxProps = {
-    width: "40%",
-    alignSelf: "center",
-    overflow: 'hidden'
 }
 
 const RigntContentImage: ImageProps = {
@@ -43,7 +23,7 @@ export function WhatIsMeta() {
     return (
         <Flex className={ styles.wrapper }>
             <Flex className={ styles['left-content'] }>
-                <Heading {...TitleHeading}>What is Meta?</Heading>
+                <h2 className={ `common-title ${styles.title}` }>What is Meta?</h2>
                 <Line />
                 <Introduction title="Prefunded projects">
                     Creators can raise money via a token to create something (e.g., write an essay) and then the holders of that token will accrue value for early support of the project.

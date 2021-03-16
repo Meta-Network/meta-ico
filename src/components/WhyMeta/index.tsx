@@ -7,13 +7,6 @@ import Icon4 from "../../../public/assets/icon4@2x.png";
 
 import styles from "./index.module.scss";
 
-const TitleProp: HeadingProps = {
-  fontFamily: "DINAlternate-Bold, DINAlternate",
-  fontSize: "56px",
-  fontWeight: "bold",
-  lineHeight: "66px"
-}
-
 export default function WhyMeta(props: any) {
   const list = [
     {
@@ -38,9 +31,9 @@ export default function WhyMeta(props: any) {
     }
   ]
   return (<>
-    <Heading {...TitleProp}>
+    <h2 className={ `common-title` }>
       Why Meta?
-    </Heading>
+    </h2>
     <Grid className={styles.container}>
     {
       list.map((i: any, idx: number) => (
