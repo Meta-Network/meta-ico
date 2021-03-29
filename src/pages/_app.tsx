@@ -1,6 +1,5 @@
 // import App from "next/app";
 import type { AppProps /*, AppContext */ } from 'next/app'
-import Head from "next/head";
 import { Navbar } from "../components/Navbar";
 import { UseWalletProvider } from "use-wallet";
 import '../styles/globals.scss'
@@ -9,6 +8,7 @@ import Footer from '../components/Footer/index';
 import { ChakraProvider, extendTheme } from "@chakra-ui/react"
 import { WalletErrorPopup } from '../components/WalletError';
 import { Banner } from '../components/Banner';
+import { MetaHead } from '../components/MetaHead';
 
 const theme = extendTheme({
   colors: {
@@ -32,10 +32,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       walletconnect: { rpcUrl: "https://bsc-dataseed.binance.org/" }
     }}>
     <ChakraProvider theme={theme}>
-      <Head>
-        <title>Meta Network</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <MetaHead />
       <Navbar />
       <Banner />
       <div className={styles.container}>
