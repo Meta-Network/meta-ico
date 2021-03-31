@@ -13,6 +13,7 @@ import LogoDForce from "../../assets/img/logo-dforce.png";
 import LogoBinance from "../../assets/img/logo-binance.png";
 import LogoPrimitiveCrypto from "../../assets/img/logo-primitive-crypto.png";
 import LogoTernaryCaptial from "../../assets/img/logo-ternary-captial.png";
+import LogoNineTCaptial from "../../assets/img/logo-ninet-capital.jpg";
 
 import styles from './index.module.scss';
 
@@ -44,7 +45,8 @@ const logosUrls: string[] = [
     LogoDForce,
     LogoBinance,
     LogoPrimitiveCrypto,
-    LogoTernaryCaptial
+    LogoTernaryCaptial,
+    LogoNineTCaptial
 ]
 
 export function PartnersDisplay() {
