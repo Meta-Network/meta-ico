@@ -13,16 +13,9 @@ const Footer = () => {
     return (
         <footer className={styles.footer}>
             <Head>
-                <link href="https://at.alicdn.com/t/font_2395525_sjpifmsr80b.css" rel="stylesheet" key="test" />
+                <link href="https://at.alicdn.com/t/font_2395525_ao8nrsky1n6.css" rel="stylesheet" key="iconfont" />
             </Head>
             <div className={styles['footer-container']}>
-                <div className={styles['footer-share']}>
-                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Meta-Network"><i className="iconfont icon-telegram" style={BiggerIcon}></i></a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Meta-Network"><i className="iconfont icon-twitter" style={BiggerIcon}></i></a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Meta-Network"><i className="iconfont icon-github" style={BiggerIcon}></i></a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Meta-Network"><i className="iconfont icon-medium" style={BiggerIcon}></i></a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Meta-Network"><i className="iconfont icon-facebook" style={BiggerIcon}></i></a>
-                </div>
                 <div className={styles['footer-about']}>
                     <div className={styles['footer-about_logo']}>
                         <div className={styles['footer-about_logo_item']}>
@@ -48,27 +41,13 @@ const Footer = () => {
                         </div>
                         <p className={styles['footer-about_logo_right']}>© 2020 - 2021 Meta Network All Rights Served </p>
                     </div>
-                    <div className={styles['footer-about_nav']}>
-                        <ul>
-                            <li>
-                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Meta-Network">About</a>
-                            </li>
-                            <li>
-                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Meta-Network">Suggestions</a>
-                            </li>
-                            <li>
-                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Meta-Network">FAQ</a>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Meta-Network">Privacy Policy</a>
-                            </li>
-                            <li>
-                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Meta-Network">Terms of Service</a>
-                            </li>
-                        </ul>
-                    </div>
+                </div>
+                <div className={styles['footer-share']}>
+                    <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/59cXXWCWUT"><i className="iconfont icon-discord" style={BiggerIcon}></i></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://t.me/joinchat/7C_mfGzE7ksyNThl"><i className="iconfont icon-telegram" style={BiggerIcon}></i></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/realMetaNetwork"><i className="iconfont icon-twitter" style={BiggerIcon}></i></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Meta-Network"><i className="iconfont icon-github" style={BiggerIcon}></i></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://medium.com/meta-network"><i className="iconfont icon-medium" style={BiggerIcon}></i></a>
                 </div>
             </div>
         </footer>
