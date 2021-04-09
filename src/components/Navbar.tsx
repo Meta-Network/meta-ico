@@ -1,7 +1,7 @@
 import styles from '../styles/navbar.module.css'
 import {
-  Flex, Spacer, Heading, Button, Box, Link as StyledLink,
-  useDisclosure, FlexProps, BoxProps, ButtonProps
+  Flex, Button, Box, Link as StyledLink,
+  useDisclosure, ButtonProps
 } from "@chakra-ui/react"
 import { ConnectWalletModal } from "./ConnectWalletModal";
 import Link from "next/link";
@@ -104,8 +104,8 @@ export function Navbar() {
           <StyledHeaderTitle>Meta Network</StyledHeaderTitle>
         </Link>
         <Box>
-          <StyledLink href="#" isExternal marginRight="0.5rem">Blog</StyledLink>
-          <StyledLink href="#" isExternal marginRight="0.5rem">GitHub</StyledLink>
+          <StyledLink href="https://medium.com/meta-network" isExternal marginRight="1rem">Blog</StyledLink>
+          <StyledLink href="https://github.com/Meta-Network" isExternal marginRight="1rem">GitHub</StyledLink>
           {wallet.status === 'connected' ? (
             <>
               <span className={styles.address}>👛 {getShortedAddress(wallet.account)}</span>
