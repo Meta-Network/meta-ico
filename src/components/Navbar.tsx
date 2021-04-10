@@ -105,7 +105,6 @@ export function Navbar() {
         </Link>
         <Box>
           <StyledLink href="https://medium.com/meta-network" isExternal marginRight="1rem">Blog</StyledLink>
-          <StyledLink href="https://github.com/Meta-Network" isExternal marginRight="1rem">GitHub</StyledLink>
           {wallet.status === 'connected' ? (
             <>
               <span className={styles.address}>👛 {getShortedAddress(wallet.account)}</span>

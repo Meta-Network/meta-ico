@@ -6,7 +6,6 @@ import { AccordionGroups } from "./components/AccordionGroups"
 import { Accordion } from "./components/Accordion"
 import styles from './index.module.scss';
 
-
 const LeftContentImage: ImageProps = {
     userSelect: "none"
 }
@@ -22,30 +21,38 @@ const FirstAccordionProps: UseAccordionProps = {
 
 export function FAQ() {
     return (
-        <Box className={ styles.wrapper }>
-            <h2 className={ `common-title ${styles['faq-title']}` }>FAQ</h2>
-            <Flex className={ styles['faq-wrapper'] }>
-                <Box className={ styles['left-content'] }>
+        <Box className={styles.wrapper}>
+            <h2 className={`common-title ${styles['faq-title']}`}>FAQ</h2>
+            <Flex className={styles['faq-wrapper']}>
+                <Box className={styles['left-content']}>
                     <Image {...LeftContentImage} src={ImgFAQ} />
                 </Box>
-                <Flex className={ styles['right-content'] }>
+                <Flex className={styles['right-content']}>
                     <Line />
                     <AccordionGroups title="Getting Started" accordionProps={FirstAccordionProps}>
                         <Accordion title="What is Meta Network?">
-                            EMPOWERING CREATORS WITH A TOKEN ECONOMY<br />
-                            Meta Network combines several Web3 technologies including DeFi and decentralized storage to create a community-driven creators network. We improve the interaction between creators and fans through a token economy, and capitalize the data created by users in social networks, ultimately enabling Data as Labor.
+                            <p className={`${styles['item-text-blod']}`}>
+                                EMPOWERING CREATORS WITH A TOKEN ECONOMY
+                            </p>
+                            <p className={styles['item-text']}>
+                                Meta Network combines several Web3 technologies including DeFi and decentralized storage to create a community-driven creators network. We improve the interaction between creators and fans through a token economy, and capitalize the data created by users in social networks, ultimately enabling Data as Labor.
+                            </p>
                         </Accordion>
                         <Accordion title="Why is Meta Network?">
-                            <b>Low Barrier</b> : Our users can use our predefined service without any specific knowledge of web3 and private keys.<br />
-                            <b>Open Source</b>: All our services are on github and are as open as possible.<br />
-                            <b>Self-host</b>: Users are always in full control of their own data.<br />
-                            <b>Interoperability</b>: With the advantages of DeFi money lego and our comprehensive developer documents, third party developers can access users’ assets as well as social network data to build third party Dapps and share passive profit with users.
-                        </Accordion>
-                        <Accordion title="What feature does it include in Meta Network?">
-                            Meta Ecosystem<br />
-                            Core Module<br />
-                            Fan Ticket<br />
-                            One-stop platform for issuing personal tokens(a.k.a. Social Money)
+                            <b>Idea</b>
+                            <ul className={styles['item']}>
+                                <li>Creators raise money via a token to create something (e.g., write an essay) and then the holders of that token will accrue value for early support of the project.</li>
+                                <li>When a creator makes something, they can generate value across the lifetime of that object, such as art resales or song streams.</li>
+                                <li>Tokenizat ion can enable unique access requirements which incentivize communities and users to pay for access and participate more actively.</li>
+                            </ul>
+                            <br />
+                            <b>Advantage</b>
+                            <ul className={styles['item']}>
+                                <li> We are the world's most multifaceted and open blockchain infrastructure for social money.</li>
+                                <li>We are the leading project based on social money networks in Asia.</li>
+                                <li>We are influential among blockchain developers and creators in China.</li>
+                                <li>We have three-years experience in researching and developing the ideas behind social money.</li>
+                            </ul>
                         </Accordion>
                         <Accordion title="Creator Toolkits">
                             <b>Matataki</b><br />
@@ -58,29 +65,19 @@ export function FAQ() {
                             Social Network Aggregator to provide single source of truth digital avatar for third party Meta dapp developers.
                         </Accordion>
                         <Accordion title="What can you do with Fan Ticket?">
-                            <b>Social money</b>: based on personal credit<br />
-                            <b>A decentralized community</b>: tool for creators<br />
-                            <b>More revenue</b>: hold/pay Fan Ticket to get access to articles<br />
-                            <b>More influence</b>: use your Fan Ticket to reward others<br />
-                            <b>Decentralized community</b>: develop your fans who hold your Fan Ticket
-                        </Accordion>
-                        <Accordion title="Meta Network Universel Applications">
-                            Matataki<br />
-                            Meta DAO<br />
-                            Portal for Fan Ticket<br />
-                            Airdropper<br />
-                            Quest<br />
-                            Hexo-plugin<br />
-                            Telegram Bot<br />
-                            <a className={ styles['faq-link'] } href='https://www.matataki.io/dapp'>Find More</a>
+                            <p className={styles['item-text']}><b>Social money</b>: based on personal credit</p>
+                            <p className={styles['item-text']}> <b>A decentralized community</b>: tool for creators</p>
+                            <p className={styles['item-text']}> <b>More revenue</b>: hold/pay Fan Ticket to get access to articles</p>
+                            <p className={styles['item-text']}> <b>More influence</b>: use your Fan Ticket to reward others</p>
+                            <p className={styles['item-text']}> <b>Decentralized community</b>: develop your fans who hold your Fan Ticket</p>
                         </Accordion>
                         <Accordion title="How about the opportunity">
-                            In the past 16 months, we achieved:<br />
-                            32.72% avg. per quarter user growth rate.<br />
-                            32.00% avg. per quarter article growth rate.<br />
-                            40.82% avg. per quarter transaction growth rate.<br />
-                            42.04% avg. per quarter increase in minted Social Money.<br />
-                            We have a total of 10k+ users, and a total of 221 Creators.<br />
+                            <p className={styles['item-text']}>In the past 16 months, we achieved:<br /></p>
+                            <p className={styles['item-text']}>32.72% avg. per quarter user growth rate.<br /></p>
+                            <p className={styles['item-text']}>32.00% avg. per quarter article growth rate.<br /></p>
+                            <p className={styles['item-text']}>40.82% avg. per quarter transaction growth rate.<br /></p>
+                            <p className={styles['item-text']}>42.04% avg. per quarter increase in minted Social Money.<br /></p>
+                            <p className={styles['item-text']}>We have a total of 10k+ users, and a total of 221 Creators.<br /></p>
                         </Accordion>
                     </AccordionGroups>
                     {/* <AccordionGroups title="Getting Started" accordionProps={DefaultAccordionProps}>
