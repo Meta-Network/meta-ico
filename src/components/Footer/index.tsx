@@ -2,6 +2,8 @@ import Head from "next/head";
 import styles from './index.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
+import ImgMetaNetwork from '../../assets/img/logo-meta.png'
+import ImgMatataki from '../../assets/img/logo-matataki-footer.png'
 
 const BiggerIcon = {
     fontSize: '32px',
@@ -21,9 +23,8 @@ const Footer = () => {
                         <div className={styles['footer-about_logo_item']}>
                             <Link href="/">
                                 <a>
-                                    <Image
-                                        src="/images/logo-meta.png"
-                                        height={21.84}
+                                    <img
+                                        src={ ImgMetaNetwork }
                                         width={152}
                                         alt="Meta Network"
                                     />
@@ -31,9 +32,8 @@ const Footer = () => {
                             </Link>
                             <div style={{ width: 16 }}></div>
                             <a href="https://www.matataki.io" target="_blank" rel="noopener noreferrer">
-                                <Image
-                                    src="/images/logo-matataki.png"
-                                    height={32}
+                                <img
+                                    src={ ImgMatataki }
                                     width={170}
                                     alt="Matataki"
                                 />
@@ -46,7 +46,7 @@ const Footer = () => {
                     <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/59cXXWCWUT"><i className="iconfont icon-discord" style={BiggerIcon}></i></a>
                     <a target="_blank" rel="noopener noreferrer" href="https://t.me/joinchat/7C_mfGzE7ksyNThl"><i className="iconfont icon-telegram" style={BiggerIcon}></i></a>
                     <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/realMetaNetwork"><i className="iconfont icon-twitter" style={BiggerIcon}></i></a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Meta-Network"><i className="iconfont icon-github" style={BiggerIcon}></i></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Matataki-io"><i className="iconfont icon-github" style={BiggerIcon}></i></a>
                     <a target="_blank" rel="noopener noreferrer" href="https://medium.com/meta-network"><i className="iconfont icon-medium" style={BiggerIcon}></i></a>
                 </div>
             </div>
