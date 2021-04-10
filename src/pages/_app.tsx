@@ -9,6 +9,7 @@ import { ChakraProvider, extendTheme } from "@chakra-ui/react"
 import { WalletErrorPopup } from '../components/WalletError';
 import { Banner } from '../components/Banner';
 import { MetaHead } from '../components/MetaHead';
+import { currentChainId } from '../constant/index'
 
 const theme = extendTheme({
   colors: {
@@ -27,7 +28,7 @@ const theme = extendTheme({
 })
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <UseWalletProvider chainId={56}
+  return <UseWalletProvider chainId={currentChainId}
     connectors={{
       walletconnect: { rpcUrl: "https://bsc-dataseed.binance.org/" }
     }}>
