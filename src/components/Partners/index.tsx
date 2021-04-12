@@ -14,6 +14,8 @@ import LogoBinance from "../../assets/img/logo-binance.png";
 import LogoPrimitiveCrypto from "../../assets/img/logo-primitive-crypto.png";
 import LogoTernaryCaptial from "../../assets/img/logo-ternary-captial.png";
 import LogoNineTCaptial from "../../assets/img/logo-ninet-capital.jpg";
+import LogoLd from "../../assets/img/logo_ld.png"
+import LogoZonff from "../../assets/img/logo_zonff.png"
 
 import styles from './index.module.scss';
 
@@ -46,7 +48,9 @@ const logosUrls: string[] = [
     LogoBinance,
     LogoPrimitiveCrypto,
     LogoTernaryCaptial,
-    LogoNineTCaptial
+    // LogoNineTCaptial, 暂时隐藏
+    LogoLd,
+    LogoZonff
 ]
 
 export function PartnersDisplay() {
