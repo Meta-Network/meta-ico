@@ -44,7 +44,7 @@ const Footer = () => {
                 </div>
                 <div className={styles['footer-share']}>
                     <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/59cXXWCWUT"><i className="iconfont icon-discord" style={BiggerIcon}></i></a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://t.me/joinchat/7C_mfGzE7ksyNThl"><i className="iconfont icon-telegram" style={BiggerIcon}></i></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://t.me/metanetwork"><i className="iconfont icon-telegram" style={BiggerIcon}></i></a>
                     <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/realMetaNetwork"><i className="iconfont icon-twitter" style={BiggerIcon}></i></a>
                     <a target="_blank" rel="noopener noreferrer" href="https://github.com/Matataki-io"><i className="iconfont icon-github" style={BiggerIcon}></i></a>
                     <a target="_blank" rel="noopener noreferrer" href="https://medium.com/meta-network"><i className="iconfont icon-medium" style={BiggerIcon}></i></a>
