@@ -10,6 +10,7 @@ import { WalletErrorPopup } from '../components/WalletError';
 import { Banner } from '../components/Banner';
 import { MetaHead } from '../components/MetaHead';
 import { currentChainId } from '../constant/index'
+import { Alert, AlertIcon } from "@chakra-ui/react"
 
 const theme = extendTheme({
   colors: {
@@ -33,6 +34,13 @@ function MyApp({ Component, pageProps }: AppProps) {
       walletconnect: { rpcUrl: "https://bsc-dataseed.binance.org/" }
     }}>
     <ChakraProvider theme={theme}>
+      <Alert status="warning" className={styles.fixed}>
+        <AlertIcon />
+        <div>
+        <p>Real META Token from meta.io is:0x8807e69dC04155AF64172Cd6f0B4738F8068D0D4 (ETH)</p>
+        <p>Meta.io 真正的 META 代币地址是：0x8807e69dC04155AF64172Cd6f0B4738F8068D0D4 (ETH)</p>
+        </div>
+      </Alert>
       <MetaHead />
       <Navbar />
       <Banner />
