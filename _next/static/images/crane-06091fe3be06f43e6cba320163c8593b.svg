@@ -1,0 +1,183 @@
+<svg width="761px" height="401px" viewBox="0 0 761 401" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-1098.000000, -566.000000)">
+            <g transform="translate(1108.000000, 570.000000)">
+                <g id="Group-2">
+                    <g id="build">
+                        <polygon stroke="#B0A2ED" stroke-width="8.54999989" transform="translate(361.940654, 367.844964) rotate(90.000000) translate(-361.940654, -367.844964) " points="347.440654 353.344964 376.440654 353.344964 376.440654 382.344964 347.440654 382.344964"></polygon>
+                        <line x1="347.440654" y1="353.344964" x2="376.440654" y2="382.344964" stroke="#B0A2ED" stroke-width="8.54999989"></line>
+                        <line x1="347.440654" y1="382.344964" x2="376.440654" y2="353.344964" stroke="#B0A2ED" stroke-width="8.54999989"></line>
+                        <polygon stroke="#B0A2ED" stroke-width="8.54999989" transform="translate(303.940654, 367.844964) rotate(90.000000) translate(-303.940654, -367.844964) " points="289.440654 353.344964 318.440654 353.344964 318.440654 382.344964 289.440654 382.344964"></polygon>
+                        <line x1="289.440654" y1="353.344964" x2="318.440654" y2="382.344964" stroke="#B0A2ED" stroke-width="8.54999989"></line>
+                        <line x1="289.440654" y1="382.344964" x2="318.440654" y2="353.344964" stroke="#B0A2ED" stroke-width="8.54999989"></line>
+                        <polygon stroke="#B0A2ED" stroke-width="8.54999989" transform="translate(332.940654, 367.844964) rotate(90.000000) translate(-332.940654, -367.844964) " points="318.440654 353.344964 347.440654 353.344964 347.440654 382.344964 318.440654 382.344964"></polygon>
+                        <line x1="318.440654" y1="353.344964" x2="347.440654" y2="382.344964" stroke="#B0A2ED" stroke-width="8.54999989"></line>
+                        <line x1="318.440654" y1="382.344964" x2="347.440654" y2="353.344964" stroke="#B0A2ED" stroke-width="8.54999989"></line>
+                        <rect stroke="#B0A2ED" stroke-width="8.54999989" transform="translate(303.940654, 338.844964) rotate(90.000000) translate(-303.940654, -338.844964) " x="289.440654" y="324.344964" width="29" height="29"></rect>
+                        <line x1="289.440654" y1="324.344964" x2="318.440654" y2="353.344964" stroke="#B0A2ED" stroke-width="8.54999989"></line>
+                        <line x1="289.440654" y1="353.344964" x2="318.440654" y2="324.344964" stroke="#B0A2ED" stroke-width="8.54999989"></line>
+                        <polygon class="box1" stroke="#B0A2ED" stroke-width="8.54999989" transform="translate(231.940654, 367.844964) rotate(90.000000) translate(-231.940654, -367.844964) " points="217.440654 353.344964 246.440654 353.344964 246.440654 382.344964 217.440654 382.344964"></polygon>
+                        <line class="box1" x1="217.440654" y1="353.344964" x2="246.440654" y2="382.344964" stroke="#B0A2ED" stroke-width="8.54999989"></line>
+                        <line class="box1" x1="217.440654" y1="382.344964" x2="246.440654" y2="353.344964" stroke="#B0A2ED" stroke-width="8.54999989"></line>
+                        <rect fill="#9F8BEF" fill-rule="nonzero" transform="translate(254.440654, 93.844964) rotate(-180.000000) translate(-254.440654, -93.844964) " x="243.440654" y="88.344964" width="22" height="11"></rect>
+                        <circle fill="#9F8BEF" fill-rule="nonzero" cx="254.440654" cy="75.344964" r="10"></circle>
+                        <line x1="33.440654" y1="72.344964" x2="115.440654" y2="0.344964" stroke="#B0A2ED" stroke-width="5.69999993" stroke-linecap="round"></line>
+                        <line x1="255.440654" y1="63.344964" x2="115.440654" y2="0.344964" stroke="#B0A2ED" stroke-width="5.69999993" stroke-linecap="round"></line>
+                        <rect stroke="#B0A2ED" stroke-width="8.54999989" transform="translate(114.940654, 341.844964) rotate(-180.000000) translate(-114.940654, -341.844964) " x="100.440654" y="327.344964" width="29" height="29"></rect>
+                        <line x1="129.440654" y1="327.344964" x2="100.440654" y2="356.344964" stroke="#B0A2ED" stroke-width="8.54999989"></line>
+                        <line x1="100.440654" y1="327.344964" x2="129.440654" y2="356.344964" stroke="#B0A2ED" stroke-width="8.54999989"></line>
+                        <rect stroke="#B0A2ED" stroke-width="8.54999989" transform="translate(114.940654, 283.844964) rotate(-180.000000) translate(-114.940654, -283.844964) " x="100.440654" y="269.344964" width="29" height="29"></rect>
+                        <line x1="129.440654" y1="269.344964" x2="100.440654" y2="298.344964" stroke="#B0A2ED" stroke-width="8.54999989"></line>
+                        <line x1="100.440654" y1="269.344964" x2="129.440654" y2="298.344964" stroke="#B0A2ED" stroke-width="8.54999989"></line>
+                        <rect stroke="#B0A2ED" stroke-width="8.54999989" transform="translate(114.940654, 312.844964) rotate(-180.000000) translate(-114.940654, -312.844964) " x="100.440654" y="298.344964" width="29" height="29"></rect>
+                        <line x1="129.440654" y1="298.344964" x2="100.440654" y2="327.344964" stroke="#B0A2ED" stroke-width="8.54999989"></line>
+                        <line x1="100.440654" y1="298.344964" x2="129.440654" y2="327.344964" stroke="#B0A2ED" stroke-width="8.54999989"></line>
+                        <rect fill="#9F8BEF" fill-rule="nonzero" transform="translate(115.440654, 106.844964) rotate(-180.000000) translate(-115.440654, -106.844964) " x="93.440654" y="89.344964" width="44" height="35"></rect>
+                        <rect stroke="#B0A2ED" stroke-width="8.54999989" transform="translate(114.940654, 254.844964) rotate(-180.000000) translate(-114.940654, -254.844964) " x="100.440654" y="240.344964" width="29" height="29"></rect>
+                        <line x1="129.440654" y1="240.344964" x2="100.440654" y2="269.344964" stroke="#B0A2ED" stroke-width="8.54999989"></line>
+                        <line x1="100.440654" y1="240.344964" x2="129.440654" y2="269.344964" stroke="#B0A2ED" stroke-width="8.54999989"></line>
+                        <rect stroke="#B0A2ED" stroke-width="8.54999989" transform="translate(114.940654, 197.844964) rotate(-180.000000) translate(-114.940654, -197.844964) " x="100.440654" y="183.344964" width="29" height="29"></rect>
+                        <line x1="129.440654" y1="183.344964" x2="100.440654" y2="212.344964" stroke="#B0A2ED" stroke-width="8.54999989"></line>
+                        <line x1="100.440654" y1="183.344964" x2="129.440654" y2="212.344964" stroke="#B0A2ED" stroke-width="8.54999989"></line>
+                        <rect stroke="#B0A2ED" stroke-width="8.54999989" transform="translate(114.940654, 226.844964) rotate(-180.000000) translate(-114.940654, -226.844964) " x="100.440654" y="212.344964" width="29" height="29"></rect>
+                        <line x1="129.440654" y1="212.344964" x2="100.440654" y2="241.344964" stroke="#B0A2ED" stroke-width="8.54999989"></line>
+                        <line x1="100.440654" y1="212.344964" x2="129.440654" y2="241.344964" stroke="#B0A2ED" stroke-width="8.54999989"></line>
+                        <rect stroke="#B0A2ED" stroke-width="8.54999989" transform="translate(114.940654, 168.844964) rotate(-180.000000) translate(-114.940654, -168.844964) " x="100.440654" y="154.344964" width="29" height="29"></rect>
+                        <line x1="129.440654" y1="154.344964" x2="100.440654" y2="183.344964" stroke="#B0A2ED" stroke-width="8.54999989"></line>
+                        <line x1="100.440654" y1="154.344964" x2="129.440654" y2="183.344964" stroke="#B0A2ED" stroke-width="8.54999989"></line>
+                        <rect stroke="#B0A2ED" stroke-width="8.54999989" transform="translate(114.940654, 110.844964) rotate(-180.000000) translate(-114.940654, -110.844964) " x="100.440654" y="96.344964" width="29" height="29"></rect>
+                        <line x1="129.440654" y1="96.344964" x2="100.440654" y2="125.344964" stroke="#B0A2ED" stroke-width="8.54999989"></line>
+                        <line x1="100.440654" y1="96.344964" x2="129.440654" y2="125.344964" stroke="#B0A2ED" stroke-width="8.54999989"></line>
+                        <rect stroke="#B0A2ED" stroke-width="8.54999989" transform="translate(114.940654, 139.844964) rotate(-180.000000) translate(-114.940654, -139.844964) " x="100.440654" y="125.344964" width="29" height="29"></rect>
+                        <line x1="129.440654" y1="125.344964" x2="100.440654" y2="154.344964" stroke="#B0A2ED" stroke-width="8.54999989"></line>
+                        <line x1="100.440654" y1="125.344964" x2="129.440654" y2="154.344964" stroke="#B0A2ED" stroke-width="8.54999989"></line>
+                        <rect fill="#B0A2ED" fill-rule="nonzero" transform="translate(115.440654, 370.344964) rotate(-180.000000) translate(-115.440654, -370.344964) " x="56.440654" y="356.344964" width="118" height="28"></rect>
+                        <rect fill="#B0A2ED" fill-rule="nonzero" transform="translate(114.940654, 117.344964) rotate(-180.000000) translate(-114.940654, -117.344964) " x="80.440654" y="109.344964" width="69" height="16"></rect>
+                        <rect fill="#9F8BEF" fill-rule="nonzero" transform="translate(86.440654, 78.844964) rotate(-180.000000) translate(-86.440654, -78.844964) " x="16.440654" y="72.344964" width="140" height="13"></rect>
+                        <rect fill="#B0A2ED" fill-rule="nonzero" transform="translate(67.440654, 71.844964) rotate(-180.000000) translate(-67.440654, -71.844964) " x="53.440654" y="65.344964" width="28" height="13"></rect>
+                        <rect fill="#B0A2ED" fill-rule="nonzero" transform="translate(34.440654, 71.844964) rotate(-180.000000) translate(-34.440654, -71.844964) " x="20.440654" y="65.344964" width="28" height="13"></rect>
+                        <line x1="114.940654" y1="63.344964" x2="114.940654" y2="0.344964" stroke="#B0A2ED" stroke-width="7.5999999" stroke-linecap="round"></line>
+                        <line x1="142.440654" y1="57.344964" x2="115.440654" y2="0.344964" stroke="#B0A2ED" stroke-width="7.5999999" stroke-linecap="round"></line>
+                        <line x1="87.440654" y1="57.344964" x2="114.440654" y2="0.344964" stroke="#B0A2ED" stroke-width="7.5999999" stroke-linecap="round"></line>
+                        <rect fill="#B0A2ED" fill-rule="nonzero" transform="translate(115.440654, 75.844964) rotate(-180.000000) translate(-115.440654, -75.844964) " x="86.440654" y="54.344964" width="58" height="43"></rect>
+                        <rect fill="#9F8BEF" fill-rule="nonzero" transform="translate(128.940654, 74.844964) rotate(-180.000000) translate(-128.940654, -74.844964) " x="113.440654" y="61.344964" width="31" height="27"></rect>
+                        <polygon stroke="#B0A2ED" stroke-width="6.64999992" stroke-linejoin="round" points="331.440654 88.344964 306.440654 63.344964 306.440654 88.344964"></polygon>
+                        <polygon stroke="#B0A2ED" stroke-width="6.64999992" transform="translate(266.940654, 75.844964) rotate(90.000000) translate(-266.940654, -75.844964) " points="254.440654 63.344964 279.440654 63.344964 279.440654 88.344964 254.440654 88.344964"></polygon>
+                        <line x1="254.440654" y1="63.344964" x2="279.440654" y2="88.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <line x1="254.440654" y1="88.344964" x2="279.440654" y2="63.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <polygon stroke="#B0A2ED" stroke-width="6.64999992" transform="translate(291.940654, 75.844964) rotate(90.000000) translate(-291.940654, -75.844964) " points="279.440654 63.344964 304.440654 63.344964 304.440654 88.344964 279.440654 88.344964"></polygon>
+                        <line x1="279.440654" y1="63.344964" x2="304.440654" y2="88.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <line x1="279.440654" y1="88.344964" x2="304.440654" y2="63.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <polygon stroke="#B0A2ED" stroke-width="6.64999992" transform="translate(242.940654, 75.844964) rotate(90.000000) translate(-242.940654, -75.844964) " points="230.440654 63.344964 255.440654 63.344964 255.440654 88.344964 230.440654 88.344964"></polygon>
+                        <line x1="230.440654" y1="63.344964" x2="255.440654" y2="88.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <line x1="230.440654" y1="88.344964" x2="255.440654" y2="63.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <polygon stroke="#B0A2ED" stroke-width="6.64999992" transform="translate(193.940654, 75.844964) rotate(90.000000) translate(-193.940654, -75.844964) " points="181.440654 63.344964 206.440654 63.344964 206.440654 88.344964 181.440654 88.344964"></polygon>
+                        <line x1="181.440654" y1="63.344964" x2="206.440654" y2="88.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <line x1="181.440654" y1="88.344964" x2="206.440654" y2="63.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <polygon stroke="#B0A2ED" stroke-width="6.64999992" transform="translate(217.940654, 75.844964) rotate(90.000000) translate(-217.940654, -75.844964) " points="205.440654 63.344964 230.440654 63.344964 230.440654 88.344964 205.440654 88.344964"></polygon>
+                        <line x1="205.440654" y1="63.344964" x2="230.440654" y2="88.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <line x1="205.440654" y1="88.344964" x2="230.440654" y2="63.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <polygon stroke="#B0A2ED" stroke-width="6.64999992" transform="translate(168.940654, 75.844964) rotate(90.000000) translate(-168.940654, -75.844964) " points="156.440654 63.344964 181.440654 63.344964 181.440654 88.344964 156.440654 88.344964"></polygon>
+                        <line x1="156.440654" y1="63.344964" x2="181.440654" y2="88.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <line x1="156.440654" y1="88.344964" x2="181.440654" y2="63.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <polygon stroke="#B0A2ED" stroke-width="6.64999992" transform="translate(536.440654, 369.344964) rotate(-90.000000) translate(-536.440654, -369.344964) " points="524.440654 357.344964 548.440654 357.344964 548.440654 381.344964 524.440654 381.344964"></polygon>
+                        <line x1="524.440654" y1="381.344964" x2="548.440654" y2="357.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <line x1="524.440654" y1="357.344964" x2="548.440654" y2="381.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <polygon class="box" stroke="#B0A2ED" stroke-width="6.64999992" transform="translate(462.440654, 369.344964) rotate(-90.000000) translate(-462.440654, -369.344964) " points="450.440654 357.344964 474.440654 357.344964 474.440654 381.344964 450.440654 381.344964"></polygon>
+                        <line class="box" x1="450.440654" y1="381.344964" x2="474.440654" y2="357.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <line class="box" x1="450.440654" y1="357.344964" x2="474.440654" y2="381.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <polygon stroke="#B0A2ED" stroke-width="6.64999992" transform="translate(512.440654, 369.344964) rotate(-90.000000) translate(-512.440654, -369.344964) " points="500.440654 357.344964 524.440654 357.344964 524.440654 381.344964 500.440654 381.344964"></polygon>
+                        <line x1="500.440654" y1="381.344964" x2="524.440654" y2="357.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <line x1="500.440654" y1="357.344964" x2="524.440654" y2="381.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <rect fill="#9F8BEF" fill-rule="nonzero" x="506.440654" y="135.344964" width="19" height="10"></rect>
+                        <circle fill="#9F8BEF" fill-rule="nonzero" cx="515.440654" cy="125.344964" r="8"></circle>
+                        <line x1="702.440654" y1="122.344964" x2="633.440654" y2="62.344964" stroke="#B0A2ED" stroke-width="4.74999994" stroke-linecap="round"></line>
+                        <line x1="515.440654" y1="114.344964" x2="633.440654" y2="61.344964" stroke="#B0A2ED" stroke-width="4.74999994" stroke-linecap="round"></line>
+                        <rect stroke="#B0A2ED" stroke-width="6.64999992" x="621.440654" y="337.344964" width="24" height="24"></rect>
+                        <line x1="621.440654" y1="337.344964" x2="645.440654" y2="361.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <line x1="645.440654" y1="337.344964" x2="621.440654" y2="361.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <rect stroke="#B0A2ED" stroke-width="6.64999992" x="621.440654" y="288.344964" width="24" height="24"></rect>
+                        <line x1="621.440654" y1="288.344964" x2="645.440654" y2="312.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <line x1="645.440654" y1="288.344964" x2="621.440654" y2="312.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <rect stroke="#B0A2ED" stroke-width="6.64999992" x="621.440654" y="312.344964" width="24" height="24"></rect>
+                        <line x1="621.440654" y1="312.344964" x2="645.440654" y2="336.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <line x1="645.440654" y1="312.344964" x2="621.440654" y2="336.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <rect fill="#9F8BEF" fill-rule="nonzero" x="614.440654" y="137.344964" width="37" height="29"></rect>
+                        <rect stroke="#B0A2ED" stroke-width="6.64999992" x="621.440654" y="264.344964" width="24" height="24"></rect>
+                        <line x1="621.440654" y1="264.344964" x2="645.440654" y2="288.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <line x1="645.440654" y1="264.344964" x2="621.440654" y2="288.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <rect stroke="#B0A2ED" stroke-width="6.64999992" x="621.440654" y="215.344964" width="24" height="24"></rect>
+                        <line x1="621.440654" y1="215.344964" x2="645.440654" y2="239.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <line x1="645.440654" y1="215.344964" x2="621.440654" y2="239.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <rect stroke="#B0A2ED" stroke-width="6.64999992" x="621.440654" y="239.344964" width="24" height="24"></rect>
+                        <line x1="621.440654" y1="239.344964" x2="645.440654" y2="263.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <line x1="645.440654" y1="239.344964" x2="621.440654" y2="263.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <rect stroke="#B0A2ED" stroke-width="6.64999992" x="621.440654" y="191.344964" width="24" height="24"></rect>
+                        <line x1="621.440654" y1="191.344964" x2="645.440654" y2="215.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <line x1="645.440654" y1="191.344964" x2="621.440654" y2="215.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <rect stroke="#B0A2ED" stroke-width="6.64999992" x="621.440654" y="142.344964" width="24" height="24"></rect>
+                        <line x1="621.440654" y1="142.344964" x2="645.440654" y2="166.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <line x1="645.440654" y1="142.344964" x2="621.440654" y2="166.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <rect stroke="#B0A2ED" stroke-width="6.64999992" x="621.440654" y="167.344964" width="24" height="24"></rect>
+                        <line x1="621.440654" y1="167.344964" x2="645.440654" y2="191.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <line x1="645.440654" y1="167.344964" x2="621.440654" y2="191.344964" stroke="#B0A2ED" stroke-width="6.64999992"></line>
+                        <rect fill="#B0A2ED" fill-rule="nonzero" x="583.440654" y="361.344964" width="99" height="24"></rect>
+                        <rect fill="#B0A2ED" fill-rule="nonzero" x="604.440654" y="152.344964" width="58" height="14"></rect>
+                        <rect fill="#9F8BEF" fill-rule="nonzero" x="598.440654" y="122.344964" width="118" height="11"></rect>
+                        <rect fill="#B0A2ED" fill-rule="nonzero" x="661.440654" y="116.344964" width="23" height="11"></rect>
+                        <rect fill="#B0A2ED" fill-rule="nonzero" x="689.440654" y="116.344964" width="23" height="11"></rect>
+                        <line x1="632.940654" y1="114.344964" x2="632.940654" y2="61.344964" stroke="#B0A2ED" stroke-width="5.69999993" stroke-linecap="round"></line>
+                        <line x1="610.440654" y1="109.344964" x2="633.440654" y2="61.344964" stroke="#B0A2ED" stroke-width="5.69999993" stroke-linecap="round"></line>
+                        <line x1="656.440654" y1="109.344964" x2="633.440654" y2="61.344964" stroke="#B0A2ED" stroke-width="5.69999993" stroke-linecap="round"></line>
+                        <rect fill="#B0A2ED" fill-rule="nonzero" x="608.440654" y="107.344964" width="49" height="36"></rect>
+                        <rect fill="#9F8BEF" fill-rule="nonzero" x="608.440654" y="113.344964" width="26" height="23"></rect>
+                        <polygon stroke="#B0A2ED" stroke-width="4.74999994" stroke-linejoin="round" points="451.440654 135.344964 472.440654 114.344964 472.440654 135.344964"></polygon>
+                        <polygon stroke="#B0A2ED" stroke-width="4.74999994" transform="translate(504.940654, 124.844964) rotate(90.000000) translate(-504.940654, -124.844964) " points="494.440654 114.344964 515.440654 114.344964 515.440654 135.344964 494.440654 135.344964"></polygon>
+                        <line x1="515.440654" y1="114.344964" x2="494.440654" y2="135.344964" stroke="#B0A2ED" stroke-width="4.74999994"></line>
+                        <line x1="515.440654" y1="135.344964" x2="494.440654" y2="114.344964" stroke="#B0A2ED" stroke-width="4.74999994"></line>
+                        <polygon stroke="#B0A2ED" stroke-width="4.74999994" transform="translate(484.940654, 124.844964) rotate(90.000000) translate(-484.940654, -124.844964) " points="474.440654 114.344964 495.440654 114.344964 495.440654 135.344964 474.440654 135.344964"></polygon>
+                        <line x1="495.440654" y1="114.344964" x2="474.440654" y2="135.344964" stroke="#B0A2ED" stroke-width="4.74999994"></line>
+                        <line x1="495.440654" y1="135.344964" x2="474.440654" y2="114.344964" stroke="#B0A2ED" stroke-width="4.74999994"></line>
+                        <polygon stroke="#B0A2ED" stroke-width="4.74999994" transform="translate(525.940654, 124.844964) rotate(90.000000) translate(-525.940654, -124.844964) " points="515.440654 114.344964 536.440654 114.344964 536.440654 135.344964 515.440654 135.344964"></polygon>
+                        <line x1="536.440654" y1="114.344964" x2="515.440654" y2="135.344964" stroke="#B0A2ED" stroke-width="4.74999994"></line>
+                        <line x1="536.440654" y1="135.344964" x2="515.440654" y2="114.344964" stroke="#B0A2ED" stroke-width="4.74999994"></line>
+                        <polygon stroke="#B0A2ED" stroke-width="4.74999994" transform="translate(566.940654, 124.844964) rotate(90.000000) translate(-566.940654, -124.844964) " points="556.440654 114.344964 577.440654 114.344964 577.440654 135.344964 556.440654 135.344964"></polygon>
+                        <line x1="577.440654" y1="114.344964" x2="556.440654" y2="135.344964" stroke="#B0A2ED" stroke-width="4.74999994"></line>
+                        <line x1="577.440654" y1="135.344964" x2="556.440654" y2="114.344964" stroke="#B0A2ED" stroke-width="4.74999994"></line>
+                        <polygon stroke="#B0A2ED" stroke-width="4.74999994" transform="translate(546.940654, 124.844964) rotate(90.000000) translate(-546.940654, -124.844964) " points="536.440654 114.344964 557.440654 114.344964 557.440654 135.344964 536.440654 135.344964"></polygon>
+                        <line x1="557.440654" y1="114.344964" x2="536.440654" y2="135.344964" stroke="#B0A2ED" stroke-width="4.74999994"></line>
+                        <line x1="557.440654" y1="135.344964" x2="536.440654" y2="114.344964" stroke="#B0A2ED" stroke-width="4.74999994"></line>
+                        <polygon stroke="#B0A2ED" stroke-width="4.74999994" transform="translate(587.940654, 124.844964) rotate(90.000000) translate(-587.940654, -124.844964) " points="577.440654 114.344964 598.440654 114.344964 598.440654 135.344964 577.440654 135.344964"></polygon>
+                        <line x1="598.440654" y1="114.344964" x2="577.440654" y2="135.344964" stroke="#B0A2ED" stroke-width="4.74999994"></line>
+                        <line x1="598.440654" y1="135.344964" x2="577.440654" y2="114.344964" stroke="#B0A2ED" stroke-width="4.74999994"></line>
+                        <line x1="741.440654" y1="386.844964" x2="0.440654" y2="386.844964" stroke="#B0A2ED" stroke-width="18.9999998" fill="#ECF6FF" fill-rule="nonzero" stroke-linecap="round"></line>
+                    </g>
+                    <g transform="translate(201.440654, 96.344964)">
+                        <line class="line" x1="53.5" y1="0" x2="53.5" y2="94" stroke="#9F8BEF" stroke-width="5.69999993" stroke-linecap="round"></line>
+                        <g class="window" transform="translate(0.000000, 91.244236)">
+                            <line x1="53" y1="9.75576371" x2="17" y2="45.7557637" stroke="#9F8BEF" stroke-width="5.69999993" stroke-linecap="round"></line>
+                            <line x1="53" y1="8.75576371" x2="90" y2="45.7557637" stroke="#9F8BEF" stroke-width="5.69999993" stroke-linecap="round"></line>
+                            <rect fill="#B0A2ED" fill-rule="nonzero" transform="translate(53.500000, 81.255764) rotate(-180.000000) translate(-53.500000, -81.255764) " x="0" y="42.7557637" width="107" height="77" rx="15.7889998"></rect>
+                            <path d="M0.00423061281,42.7557637 L107,42.7557637 L107,53.8082485 C107,57.6452547 103.85176,60.7557637 99.9682087,60.7557637 L7.03179131,60.7557637 C3.14823947,60.7557637 0,57.6452547 0,53.8082485 L0,42.7557637 L0.00423061281,42.7557637 Z" fill="#9F8BEF" fill-rule="nonzero" transform="translate(53.500000, 51.755764) rotate(-180.000000) translate(-53.500000, -51.755764) "></path>
+                            <circle fill="#B0A2ED" fill-rule="nonzero" cx="96" cy="51.7557637" r="5"></circle>
+                            <circle fill="#B0A2ED" fill-rule="nonzero" cx="81" cy="51.7557637" r="5"></circle>
+                            <circle fill="#B0A2ED" fill-rule="nonzero" cx="66" cy="51.7557637" r="5"></circle>
+                            <polygon fill="#B0A2ED" fill-rule="nonzero" transform="translate(53.325440, 9.178434) rotate(-135.000000) translate(-53.325440, -9.178434) " points="47.1511354 3.00412953 59.5038735 3 59.499744 15.3527387 47.1470059 15.3568682"></polygon>
+                        </g>
+                    </g>
+                </g>
+                <g transform="translate(472.440654, 142.344964)">
+                    <line class="line1" x1="43.5" y1="0" x2="43.5" y2="79" stroke="#9F8BEF" stroke-width="4.74999994" stroke-linecap="round"></line>
+                    <g class="window1" transform="translate(0.000000, 74.516165)">
+                        <line x1="43" y1="8.48383526" x2="74" y2="39.4838353" stroke="#9F8BEF" stroke-width="4.74999994" stroke-linecap="round"></line>
+                        <line x1="44" y1="8.48383526" x2="13" y2="39.4838353" stroke="#9F8BEF" stroke-width="4.74999994" stroke-linecap="round"></line>
+                        <rect fill="#9F8BEF" fill-rule="nonzero" x="0" y="36.4838353" width="86" height="62"></rect>
+                        <polygon fill="#B0A2ED" fill-rule="nonzero" transform="translate(43.453366, 8.186755) rotate(-45.000000) translate(-43.453366, -8.186755) " points="38.2666113 3 48.6366541 3.00346671 48.6401208 13.3735107 38.2700781 13.370044"></polygon>
+                        <polygon fill="#B0A2ED" fill-rule="nonzero" points="0 85.281304 28.9267366 54.4838353 55.4116323 83.315059 72.7322481 67.8551434 86 82.4416409 86 98.4838353 0 98.4838353"></polygon>
+                        <circle fill="#B0A2ED" fill-rule="nonzero" cx="61.5" cy="50.9838353" r="7.5"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
