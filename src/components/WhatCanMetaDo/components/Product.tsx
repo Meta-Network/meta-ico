@@ -18,8 +18,8 @@ const ContentHeading: HeadingProps = {
     fontSize: "24px",
     fontWeight: "bold",
     fontFamily: "DINAlternate-Bold, DINAlternate",
-    lineHeight: "28px",
-    marginBottom: "16px"
+    lineHeight: "1.2",
+    marginBottom: "10px"
 }
 
 export interface ProductProps {
@@ -36,7 +36,7 @@ export const Product: React.FC<ProductProps> = ({ className, logo, name, url, ch
                 <Image src={logo} />
                 <Flex {...ContentFlex} className="text">
                     <Heading {...ContentHeading}>{name}</Heading>
-                    <Text>{children}</Text>
+                    <Text style={{ lineHeight: 1.3 }}>{children}</Text>
                 </Flex>
             </a>
         </Link>
